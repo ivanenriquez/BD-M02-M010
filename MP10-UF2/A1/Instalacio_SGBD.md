@@ -3,7 +3,9 @@
 	* ARRENCAR SERVEI			**service mysql start**
 	* VERIFICAR STATUS SERVEI		**service mysql status**
 	* APAGAR SERVEI				**service mysql stop**  
-	3. Ubicacio fitxer de configuració del SGBD Percona Server
+
+
+3. Ubicacio fitxer de configuració del SGBD Percona Server
 
 /etc/my.cnf
 
