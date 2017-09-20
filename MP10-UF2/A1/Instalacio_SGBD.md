@@ -20,4 +20,4 @@
 **6.Canviar port mysqld**
 * Editar fitxer configuració */etc/my.cnf*
 * Afegir la següent línia: *port=port desitjat*
-*Executar la comanda *service mysqld restart*
+* Executar la comanda *service mysqld restart*
