@@ -17,7 +17,7 @@
 ![COMPROVACIÓ](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/ubicació_per_defecte_fitxers_de_dades.PNG)
 
 
-**6.Canviar port mysqld**
+**6. Canviar port mysqld**
 * Editar fitxer configuració */etc/my.cnf*
-* Afegir la següent línia: *port=port desitjat*
+* Afegir la següent línia: *port=33306*
 * Executar la comanda *service mysqld restart*
