@@ -3,3 +3,6 @@
 	* ARRENCAR SERVEI			**service mysql start**
 	* VERIFICAR STATUS SERVEI		**service mysql status**
 	* APAGAR SERVEI				**service mysql stop**
+
+
+![GitHub Logo](./ubicació_per_defecte_fitxers_de_dades.jpg)
