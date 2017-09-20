@@ -5,4 +5,4 @@
 	* APAGAR SERVEI				**service mysql stop**
 
 
-![GitHub Logo](./ubicació_per_defecte_fitxers_de_dades.jpg)
+![GitHub Logo](/BD-M02-M010/ubicació_per_defecte_fitxers_de_dades.jpg)
