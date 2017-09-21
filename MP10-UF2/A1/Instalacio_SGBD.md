@@ -3,18 +3,37 @@
 	 ARRENCAR SERVEI			service mysql start
 	 VERIFICAR STATUS SERVEI		service mysql status
 	 APAGAR SERVEI				service mysql stop  
-
+	 
+  
+  
 
 **3. Ubicacio fitxer de configuració del SGBD Percona Server:**
 
-/etc/my.cnf
+/etc/my.cnf  
 
 
-**4. Ubicacio fitxers de dades:**
+
+**4. Ubicacio fitxers de dades:**  
 
 /var/lib/mysql
 
 ![COMPROVACIÓ](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/ubicació_per_defecte_fitxers_de_dades.PNG)
+
+
+**5. Conexió mysql sense usuari ni contrasenya**
+
+* Crear el fitxer .my.cnf a la carpeta personal de l’usuari asix:  
+
+*/asix/.my.cnf*
+
+* Donar permisos al fitxer perquè només nosaltres y tinguem accés:  
+
+*chmod 600 .my.cnf*
+
+* Afegir les següents línies  
+
+*[client]  
+password="patata"*
 
 
 **6. Canviar port mysqld**
