@@ -49,13 +49,13 @@
 
 
 **5. Conexió mysql sense usuari ni contrasenya**
-* Crear el fitxer .my.cnf a la carpeta personal de l’usuari asix:  
+* **Crear el fitxer .my.cnf a la carpeta personal de l’usuari asix:**  
 */asix/.my.cnf*
 
-* Donar permisos al fitxer perquè només nosaltres y tinguem accés:  
+* **Donar permisos al fitxer perquè només nosaltres y tinguem accés:**  
 *chmod 600 .my.cnf*
 
-* Afegir les següents línies  
+* **Afegir les següents línies**  
 *[client]  
 password="patata"*  
 
