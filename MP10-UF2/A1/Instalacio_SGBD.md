@@ -74,6 +74,7 @@ password="patata"*
 <br>
 <br>
 <br>
+<br>
 
 
 ## PART2: INSTAL·LACIÓ SGBD MySQL 
