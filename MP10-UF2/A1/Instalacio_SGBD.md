@@ -76,4 +76,4 @@ password="patata"*
 <br>
 
 
-## PART1: INSTAL·LACIÓ SGBD MySQL Percona
+## PART2: INSTAL·LACIÓ SGBD MySQL 
