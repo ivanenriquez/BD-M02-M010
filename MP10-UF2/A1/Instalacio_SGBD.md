@@ -1,14 +1,14 @@
 ## PART1: INSTAL·LACIÓ SGBD MySQL Percona
 
-**1. Instal·lació**  
-**1. Instal·lar el repositori de Percona:  **
+* **1. Instal·lació**  
+* **Instal·lar el repositori de Percona:**  
 
 *yum install http://www.percona.com/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm*
   
-**2. Comprovar que els paquets necessaris estan en el repositori:**  
+* **Comprovar que els paquets necessaris estan en el repositori:**  
 *yum list | grep percona*
 
-**3. Instal·lar Percona-Server:**  
+* **Instal·lar Percona-Server:**  
 *yum install Percona-Server-server-57*  
 
 **1.1 Securització**  
