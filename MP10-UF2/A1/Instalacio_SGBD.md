@@ -79,5 +79,5 @@ password="patata"*
 
 ## PART2: INSTAL·LACIÓ SGBD MySQL 
 **1. Instal·lació**  
-* **Descarregar el fitxer mysql**
+* **Descarregar el fitxer mysql**  
 *wget https://dev.mysql.com/get/archives/mysql-5.7/mysql-5.7.14.tar.gz*
