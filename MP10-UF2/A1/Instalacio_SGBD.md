@@ -10,6 +10,7 @@
 
 3. Instal·lar Percona-Server:  
 *yum install Percona-Server-server-57*  
+
 **1.1 Securització**  
 **2. Instruccions per arrancar / verificar status / apagar servei de la base de dades de Percona Server:**
 	
