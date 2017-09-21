@@ -1,3 +1,5 @@
+## PART1: INSTAL·LACIÓ SGBD MySQL Percona
+
 **2. Instruccions per arrancar / verificar status / apagar servei de la base de dades de Percona Server:**
 	
 	 ARRENCAR SERVEI			service mysql start
@@ -33,7 +35,11 @@
 * Afegir les següents línies  
 
 *[client]  
-password="patata"*
+password="patata"*  
+
+![my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/my.cnf.PNG)
+
+![connexió_mysql](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/connexió_mysql_sense_usuari_ni_contrasenya.PNG)
 
 
 **6. Canviar port mysqld**
