@@ -1,5 +1,7 @@
 ## PART1: INSTAL·LACIÓ SGBD MySQL Percona
 
+**1. Instal·lació**  
+**1.1 Securització**  
 **2. Instruccions per arrancar / verificar status / apagar servei de la base de dades de Percona Server:**
 	
 	 ARRENCAR SERVEI			service mysql start
