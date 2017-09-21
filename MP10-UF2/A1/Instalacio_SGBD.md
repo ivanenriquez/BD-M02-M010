@@ -38,16 +38,16 @@
 
 * Crear el fitxer .my.cnf a la carpeta personal de l’usuari asix:  
 
-*/asix/.my.cnf*
+***/asix/.my.cnf***
 
 * Donar permisos al fitxer perquè només nosaltres y tinguem accés:  
 
-*chmod 600 .my.cnf*
+***chmod 600 .my.cnf***
 
 * Afegir les següents línies  
 
-*[client]  
-password="patata"*  
+***[client]  
+password="patata"***  
 
 ![my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/my.cnf.PNG)
 
