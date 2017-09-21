@@ -35,13 +35,13 @@
 
 
 **3. Ubicacio fitxer de configuració del SGBD Percona Server:**  
-/etc/my.cnf  
+*/etc/my.cnf*  
 
 <br>
 
 
 **4. Ubicacio fitxers de dades:**  
-/var/lib/mysql
+*/var/lib/mysql*  
 
 ![COMPROVACIÓ](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/ubicació_per_defecte_fitxers_de_dades.PNG)
 
