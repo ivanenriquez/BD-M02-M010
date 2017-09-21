@@ -1,15 +1,20 @@
 ## PART1: INSTAL·LACIÓ SGBD MySQL Percona
 
 **1. Instal·lació**  
-* **Instal·lar el repositori de Percona:**  
-
-*yum install http://www.percona.com/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm*
+* **Instal·lar el repositori de Percona:**
+*yum install http://www.percona.com/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm*  
   
 * **Comprovar que els paquets necessaris estan en el repositori:**  
 *yum list | grep percona*
 
 * **Instal·lar Percona-Server:**  
 *yum install Percona-Server-server-57*  
+
+* **Arrencar el servei ja que no s'ha activa automàticament**  
+*service mysql start*  
+
+* **Comprovar que el servei està en funcionament**  
+*service mysql status*  
 
 **1.1 Securització**  
 **2. Instruccions per arrancar / verificar status / apagar servei de la base de dades de Percona Server:**
@@ -38,16 +43,16 @@
 
 * Crear el fitxer .my.cnf a la carpeta personal de l’usuari asix:  
 
-***/asix/.my.cnf***
+*/asix/.my.cnf*
 
 * Donar permisos al fitxer perquè només nosaltres y tinguem accés:  
 
-***chmod 600 .my.cnf***
+*chmod 600 .my.cnf*
 
 * Afegir les següents línies  
 
-***[client]  
-password="patata"***  
+*[client]  
+password="patata"*  
 
 ![my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/my.cnf.PNG)
 
