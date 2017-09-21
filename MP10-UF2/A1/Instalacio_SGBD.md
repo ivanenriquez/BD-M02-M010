@@ -34,7 +34,7 @@
 <br>
 
 
-**3. Ubicacio fitxer de configuració del SGBD Percona Server:**
+**3. Ubicacio fitxer de configuració del SGBD Percona Server:**  
 /etc/my.cnf  
 
 <br>
