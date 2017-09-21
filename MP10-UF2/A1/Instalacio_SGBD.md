@@ -61,6 +61,12 @@ password="patata"*
 
 ![my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/my.cnf.PNG)
 
+<br>
+
+* **Assignar el fitxer per defecte on buscarà la contrasenya**  
+*mysql --defaults-file=/home/asix/.my.cnf*
+
+
 ![connexió_mysql](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/connexió_mysql_sense_usuari_ni_contrasenya.PNG)
 
 <br>
