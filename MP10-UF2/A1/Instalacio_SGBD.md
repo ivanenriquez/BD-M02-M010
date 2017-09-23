@@ -11,15 +11,17 @@
 *yum install Percona-Server-server-57*  
 
 * **Arrencar el servei ja que no s'ha activa automàticament**  
-*service mysql start*  
+*systemctl start mysql*  
 
 * **Comprovar que el servei està en funcionament**  
-*service mysql status*  
+*systemctl status mysql*  
 
 <br>
 
 
 **1.1 Securització**  
+Executar la comanda:  
+*mysql_secure_installation*
 
 
 <br>
@@ -27,9 +29,9 @@
 
 **2. Instruccions per arrancar / verificar status / apagar servei de la base de dades de Percona Server:**
 	
-	 ARRENCAR SERVEI			service mysql start
-	 VERIFICAR STATUS SERVEI		service mysql status
-	 APAGAR SERVEI				service mysql stop  
+	 ARRENCAR SERVEI			systemctl start mysql
+	 VERIFICAR STATUS SERVEI		systemctl status mysql
+	 APAGAR SERVEI				systemctl stop mysql  
 
 <br>
 
@@ -75,7 +77,7 @@ password="patata"*
 **6. Canviar port mysqld**
 * Editar fitxer configuració **/etc/my.cnf**
 * Afegir la següent línia: **port=33306**
-* Executar la comanda: **service mysqld restart**  
+* Executar la següent comanda per reiniciar el servei: **service mysqld restart**  
 
 <br>
 <br>
