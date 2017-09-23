@@ -21,8 +21,10 @@
 
 **1.1 Securització**  
 Executar la comanda:  
-*mysql_secure_installation*
+*mysql_secure_installation*  
 
+![SECURITZACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio1.png)  
+![SECURITZACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio2.png)
 
 <br>
 
