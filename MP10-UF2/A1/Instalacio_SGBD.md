@@ -4,8 +4,8 @@
 * **Instal·lar el repositori de Percona:**  
 *yum install http://www.percona.com/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm*  
 
-[REPOSITORI1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/captura%20instalar%20repositori.JPG)  
-[REPOSITORI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/captura%20instalar%20repositori%201.JPG)
+![REPOSITORI1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/captura%20instalar%20repositori.JPG)  
+![REPOSITORI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/captura%20instalar%20repositori%201.JPG)
   
 * **Comprovar que els paquets necessaris estan en el repositori:**  
 *yum list | grep percona*
