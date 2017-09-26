@@ -8,7 +8,7 @@
 ![REPOSITORI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/captura%20instalar%20repositori%201.JPG)
   
 * **Comprovar que els paquets necessaris estan en el repositori:**  
-*yum list | grep percona*  
+*yum list | grep Percona-Server*  
 
 ![COMPROVAR_REPOSITORI1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/comprobar%20repositori%20percona.JPG)  
 ![COMPROVAR_REPOSITORI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/comprobar%20repositori%20percona%201.JPG)
