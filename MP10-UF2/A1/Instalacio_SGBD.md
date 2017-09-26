@@ -34,7 +34,13 @@
 
 
 **1.1 Securització**  
-Executar la comanda:  
+* **Iniciar sessió com a root, la contrasenya del qual es troba en el fitxer /var/log/mysqld.log, és una contrasenya temporal que crea mysql**
+*grep 'temporary password' /var/log/mysqld.log*  
+
+![ROOT_PASSWORD](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/root_password.PNG)  
+
+
+* **Realitzar la securització**
 *mysql_secure_installation*  
 
 ![SECURITZACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio1.png)  
