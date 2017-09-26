@@ -22,11 +22,12 @@
 
 * **Arrencar el servei ja que no s'ha activa automàticament**  
 *systemctl start mysql*  
+
 ![ARRENCAR_SERVEI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/ARRENCAR_sERVEI.PNG)  
-![ESTAT_SERVEI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/ESTAT_SERVEI.PNG)
 
 * **Comprovar que el servei està en funcionament**  
 *systemctl status mysql*  
+![ESTAT_SERVEI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/ESTAT_SERVEI.PNG)
 
 <br>
 
