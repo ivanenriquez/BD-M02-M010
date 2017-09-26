@@ -36,7 +36,6 @@
 **1.1 Securització**  
 * **Iniciar sessió com a root, la contrasenya del qual es troba en el fitxer /var/log/mysqld.log, és una contrasenya temporal que crea mysql**  
 *grep 'temporary password' /var/log/mysqld.log*  
-
 ![ROOT_PASSWORD](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/root_password.PNG)  
 
 * **Un cop dins de mysql, cambiar la contrasenya per defecte de l'usuari root per una que compleixi els requisits de complexitat**  
