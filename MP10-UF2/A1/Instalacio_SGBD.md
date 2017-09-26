@@ -39,6 +39,8 @@
 
 ![ROOT_PASSWORD](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/root_password.PNG)  
 
+* **Desinstalar el plugin validate_password per treure la complexitat de les contrasenyes**  
+![COMPLEXITAT_CONTRASENYES](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/desinstalar%20el%20plugin%20de%20validate_password.JPG)  
 
 * **Realitzar la securització**
 *mysql_secure_installation*  
