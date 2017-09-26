@@ -54,6 +54,7 @@ Executar la comanda:
 
 **3. Ubicacio fitxer de configuració del SGBD Percona Server:**  
 */etc/my.cnf*  
+![/etc/my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/ruta%20del%20arxiu%20de%20configuracio.JPG)
 
 <br>
 
