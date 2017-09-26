@@ -8,10 +8,17 @@
 ![REPOSITORI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/captura%20instalar%20repositori%201.JPG)
   
 * **Comprovar que els paquets necessaris estan en el repositori:**  
-*yum list | grep percona*
+*yum list | grep percona*  
+
+![COMPROVAR_REPOSITORI1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/comprobar%20repositori%20percona.JPG)  
+![COMPROVAR_REPOSITORI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/comprobar%20repositori%20percona%201.JPG)
 
 * **Instal·lar Percona-Server:**  
 *yum install Percona-Server-server-57*  
+
+![INSTAL·LAR1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instalar%20percona%20server.JPG)  
+![INSTAL·LAR2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instalar%20percona%20server%202.JPG)  
+![INSTAL·LAR3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instalar%20percona%20server%203.JPG)  
 
 * **Arrencar el servei ja que no s'ha activa automàticament**  
 *systemctl start mysql*  
