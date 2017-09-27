@@ -105,7 +105,6 @@ password="patata"*
 * **Assignar el fitxer per defecte on buscarà la contrasenya**  
 *mysql --defaults-file=/home/asix/.my.cnf*
 
-
 ![connexió_mysql](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/connexió_mysql_sense_usuari_ni_contrasenya.PNG)
 
 <br>
@@ -135,5 +134,7 @@ password="patata"*
 
 * **Instal·lar MongoDB**  
 *yum install -y mongodb-org*  
+
 ![INSTAL·LACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació2.PNG)
+
 ![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)
