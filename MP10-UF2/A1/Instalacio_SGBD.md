@@ -120,8 +120,9 @@ password="patata"*
 ![REPOSITORI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/arxiu%20repositori.PNG)  
 
 * **Afegir les següents línies**  
-![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)  
+![CONTINGUT_ARXIU_REPOSITORI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/contingut_arxiu_repositori.PNG)  
 
 * **Instal·lar MongoDB**  
 *yum install -y mongodb-org*  
 ![INSTAL·LACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació2.PNG)
+![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)
