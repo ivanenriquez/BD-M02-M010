@@ -136,4 +136,11 @@ password="patata"*
 
 ![INSTAL·LACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació2.PNG)
 
-![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)
+![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)  
+
+* **Deshabilitar el mòdul de seguretat selinux**
+Editar fitxer */etc/selinux/config*  
+*nano /etc/selinux/config*  
+Canviar SELINUX=enforcing per SELINUX=disabled  
+
+![SELINUX=disabled](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/selinux%3Ddisabled.PNG)
