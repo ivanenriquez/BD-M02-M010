@@ -141,6 +141,6 @@ password="patata"*
 * **Deshabilitar el mòdul de seguretat selinux**
 Editar fitxer */etc/selinux/config*  
 *nano /etc/selinux/config*  
-Canviar SELINUX=enforcing per SELINUX=disabled  
+Canviar *SELINUX=enforcing* per *SELINUX=disabled*, un cop fet això reiniciar el sistema  
 
 ![SELINUX=disabled](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/selinux%3Ddisabled.PNG)
