@@ -138,7 +138,7 @@ password="patata"*
 
 ![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)  
 
-* **Deshabilitar el mòdul de seguretat selinux**
+* **Deshabilitar el mòdul de seguretat selinux**  
 Editar fitxer */etc/selinux/config*  
 *nano /etc/selinux/config*  
 Canviar *SELINUX=enforcing* per *SELINUX=disabled*, un cop fet això reiniciar el sistema  
