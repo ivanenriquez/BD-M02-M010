@@ -54,7 +54,7 @@
 ![COMPLEXITAT_CONTRASENYES](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/desinstalar%20el%20plugin%20de%20validate_password.JPG)  
   
 * **Realitzar la securització**  
-*mysql_secure_installation*  
+*mysql_secure_installation*, i un cop torni a demanar "new password" llavors li posem patata  
 
 ![SECURITZACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio1.png)  
 
