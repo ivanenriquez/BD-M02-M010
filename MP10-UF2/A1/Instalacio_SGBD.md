@@ -5,19 +5,23 @@
 *yum install http://www.percona.com/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm*  
 
 ![REPOSITORI1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/captura%20instalar%20repositori.JPG)  
+
 ![REPOSITORI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/captura%20instalar%20repositori%201.JPG)
   
 * **Comprovar que els paquets necessaris estan en el repositori:**  
 *yum list | grep Percona-Server*  
 
 ![COMPROVAR_REPOSITORI1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/comprobar%20repositori%20percona.JPG)  
+
 ![COMPROVAR_REPOSITORI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/comprobar%20repositori%20percona%201.JPG)
 
 * **Instal·lar Percona-Server:**  
 *yum install Percona-Server-server-57*  
 
 ![INSTAL·LAR1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instalar%20percona%20server.JPG)  
+
 ![INSTAL·LAR2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instalar%20percona%20server%202.JPG)  
+
 ![INSTAL·LAR3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instalar%20percona%20server%203.JPG)  
 
 * **Arrencar el servei ja que no s'ha activa automàticament**  
@@ -36,10 +40,12 @@
 **1.1 Securització**  
 * **Iniciar sessió com a root, la contrasenya del qual es troba en el fitxer /var/log/mysqld.log, és una contrasenya temporal que crea mysql**  
 *grep 'temporary password' /var/log/mysqld.log*  
+
 ![ROOT_PASSWORD](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/root_password.PNG)  
   
 * **Un cop dins de mysql, cambiar la contrasenya per defecte de l'usuari root per una que compleixi els requisits de complexitat**  
 *ALTER USER 'root'@'localhost' IDENTIFIED BY 'Contrasenya509*';*  
+
 ![CONTRASENYA_ROOT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10 UF2/A1/imatges/canviar%20la%20contra%20per%20defecte.JPG)  
   
 * **Desinstalar el plugin validate_password per treure la complexitat de les contrasenyes**  
@@ -48,7 +54,9 @@
   
 * **Realitzar la securització**  
 *mysql_secure_installation*  
+
 ![SECURITZACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio1.png)  
+
 ![SECURITZACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio2.png)  
 
 <br>
@@ -65,6 +73,7 @@
 
 **3. Ubicacio fitxer de configuració del SGBD Percona Server:**  
 */etc/my.cnf*  
+
 ![/etc/my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/ruta%20del%20arxiu%20de%20configuracio.JPG)
 
 <br>
@@ -117,9 +126,11 @@ password="patata"*
 **1. Instal·lació**  
 * **Crear arxiu del repositori**  
 *nano /etc/yum.repos.d/mongodb-org-3.4.repo*  
+
 ![REPOSITORI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/arxiu%20repositori.PNG)  
 
 * **Afegir les següents línies**  
+
 ![CONTINGUT_ARXIU_REPOSITORI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/contingut_arxiu_repositori.PNG)  
 
 * **Instal·lar MongoDB**  
