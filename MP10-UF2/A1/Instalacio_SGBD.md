@@ -161,6 +161,6 @@ Si tot ha estat correcte l'última línia d'aquest log hauría de ser la següen
 
 ![VERIFICAR_SERVEI2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/verificar%20estat%20mongodb2.PNG)  
 
-Executar *mongo*, i ja estem a la shell de MongoDB  
+**Executar *mongo*, i ja estem a la shell de MongoDB**  
 
 ![ACCEDIR_MONGODB](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/acces_mongodb.PNG)
