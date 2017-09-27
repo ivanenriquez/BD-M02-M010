@@ -50,6 +50,7 @@
   
 * **Desinstalar el plugin validate_password per treure la complexitat de les contrasenyes**  
 *uninstall plugin validate_password;*  
+
 ![COMPLEXITAT_CONTRASENYES](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/desinstalar%20el%20plugin%20de%20validate_password.JPG)  
   
 * **Realitzar la securització**  
@@ -98,9 +99,7 @@
 *[client]  
 password="patata"*  
 
-![my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/my.cnf.PNG)
-
-<br>
+![my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/my.cnf.PNG)  
 
 * **Assignar el fitxer per defecte on buscarà la contrasenya**  
 *mysql --defaults-file=/home/asix/.my.cnf*
