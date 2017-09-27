@@ -143,4 +143,9 @@ Editar fitxer */etc/selinux/config*
 *nano /etc/selinux/config*  
 Canviar *SELINUX=enforcing* per *SELINUX=disabled*, un cop fet això reiniciar el sistema  
 
-![SELINUX=disabled](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/selinux%3Ddisabled.PNG)
+![SELINUX=disabled](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/selinux%3Ddisabled.PNG)  
+
+
+* **Iniciar servei de MongoDB**  
+*service mongodb start* 
+![INICIAR_MONGODB](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/iniciar%20servei.PNG)
