@@ -114,13 +114,12 @@ password="patata"*
 <br>
 
 
-## PART2: INSTAL·LACIÓ SGBD MySQL 
+## PART2: INSTAL·LACIÓ SGBD MongoDB 
 **1. Instal·lació**  
-* **Descarregar el fitxer mysql**  
-*wget https://dev.mysql.com/get/archives/mysql-5.7/mysql-5.7.14.tar.gz*  
+* **Crear arxiu del repositori**  
+*nano /etc/yum.repos.d/mongodb-org-3.4.repo*  
 
-* **Extreure fitxer**  
-*tar xzf mysql-5.7.14.tar.gz*  
+* **Afegir les següents línies**  
 
-* **Instal·lar el compilador cmake**
-*yum install cmake cmake-gui*
+* **Instal·lar MongoDB**  
+*yum install -y mongodb-org*
