@@ -37,20 +37,19 @@
 * **Iniciar sessió com a root, la contrasenya del qual es troba en el fitxer /var/log/mysqld.log, és una contrasenya temporal que crea mysql**  
 *grep 'temporary password' /var/log/mysqld.log*  
 ![ROOT_PASSWORD](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/root_password.PNG)  
-
+  
 * **Un cop dins de mysql, cambiar la contrasenya per defecte de l'usuari root per una que compleixi els requisits de complexitat**  
 *ALTER USER 'root'@'localhost' IDENTIFIED BY 'Contrasenya509*';*  
-![CONTRASENYA_ROOT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/canviar%20la%20contra%20per%20defecte.JPG)  
-
+![CONTRASENYA_ROOT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10 UF2/A1/imatges/canviar%20la%20contra%20per%20defecte.JPG)  
+  
 * **Desinstalar el plugin validate_password per treure la complexitat de les contrasenyes**  
 *uninstall plugin validate_password;*  
 ![COMPLEXITAT_CONTRASENYES](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/desinstalar%20el%20plugin%20de%20validate_password.JPG)  
-
+  
 * **Realitzar la securització**  
 *mysql_secure_installation*  
-
 ![SECURITZACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio1.png)  
-![SECURITZACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio2.png)
+![SECURITZACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/securitzacio2.png)  
 
 <br>
 
