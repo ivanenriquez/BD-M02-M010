@@ -118,8 +118,11 @@ password="patata"*
 **1. Instal·lació**  
 * **Crear arxiu del repositori**  
 *nano /etc/yum.repos.d/mongodb-org-3.4.repo*  
+![REPOSITORI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/arxiu%20repositori.PNG)  
 
 * **Afegir les següents línies**  
+![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)  
 
 * **Instal·lar MongoDB**  
-*yum install -y mongodb-org*
+*yum install -y mongodb-org*  
+![INSTAL·LACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació2.PNG)
