@@ -147,5 +147,6 @@ Canviar *SELINUX=enforcing* per *SELINUX=disabled*, un cop fet això reiniciar e
 
 
 * **Iniciar servei de MongoDB**  
-*service mongodb start* 
+*service mongodb start*  
+
 ![INICIAR_MONGODB](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/iniciar%20servei.PNG)
