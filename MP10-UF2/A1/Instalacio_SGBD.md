@@ -92,7 +92,7 @@
 * **Crear el fitxer .my.cnf a la carpeta personal de l’usuari asix:**  
 */asix/.my.cnf*
 
-* **Donar permisos al fitxer perquè només nosaltres y tinguem accés:**  
+* **Donar permisos al fitxer perquè només nosaltres hi tinguem accés:**  
 *chmod 600 .my.cnf*
 
 * **Afegir les següents línies**  
