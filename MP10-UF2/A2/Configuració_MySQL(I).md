@@ -1,3 +1,3 @@
 ## CONFIGURACIÓ SGBD  
 
-** 1. Creació del fitxer de configuració:**
+**1. Creació del fitxer de configuració:**
