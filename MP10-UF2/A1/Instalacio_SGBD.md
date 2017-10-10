@@ -153,7 +153,7 @@ Canviar *SELINUX=enforcing* per *SELINUX=disabled*, un cop fet això reiniciar e
 * **Verificar que el servei s'ha iniciat correctament**  
 *cat /var/log/mongodb/mongod.log*  
 
-![VERIFICAR_SERVEI1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/verificar%20estat%20mongodb1.PNG)
+![VERIFICAR_SERVEI1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/verificar%20estat%20mongodb.PNG)
 
 Si tot ha estat correcte l'última línia d'aquest log hauría de ser la següent:
 **waiting for connections on port 27017**, on el port és el que està configurat per defecte a l'arxiu **/etc/mongod.conf**  
