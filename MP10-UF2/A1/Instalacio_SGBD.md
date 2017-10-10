@@ -125,8 +125,6 @@ password="patata"*
 * **Crear arxiu del repositori**  
 *nano /etc/yum.repos.d/mongodb-org-3.4.repo*  
 
-![REPOSITORI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/arxiu%20repositori.PNG)  
-
 * **Afegir les següents línies**  
 
 ![CONTINGUT_ARXIU_REPOSITORI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/contingut_arxiu_repositori.PNG)  
@@ -134,9 +132,10 @@ password="patata"*
 * **Instal·lar MongoDB**  
 *yum install -y mongodb-org*  
 
+![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)  
+
 ![INSTAL·LACIÓ2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació2.PNG)
 
-![INSTAL·LACIÓ1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/instal·lació1.PNG)  
 
 * **Deshabilitar el mòdul de seguretat selinux**  
 Editar fitxer */etc/selinux/config*  
