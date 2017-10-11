@@ -23,9 +23,6 @@ Un cop fet això reiniciar el servei:
 
 
 RUTES:  
-log_bin         */var/lib/mysql/asix2-bin*  
-slow_query_log  */var/lib/mysql/asix2-slow.log*  
-general_log     */var/lib/mysql/asix2.log*  
-   ARRENCAR SERVEI			      systemctl start mysql
-	 VERIFICAR STATUS SERVEI		systemctl status mysql
-	 APAGAR SERVEI				      systemctl stop mysql
+log_bin:         ***/var/lib/mysql/asix2-bin***  
+slow_query_log:  ***/var/lib/mysql/asix2-slow.log***  
+general_log:     ***/var/lib/mysql/asix2.log***  
