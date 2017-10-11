@@ -11,10 +11,10 @@
 * **Activar els logs**  
 Editar el fitxer */etc/percona-server.conf.d/mysql.cnf*. Afegir les següents línies:  
 
-server_id=master-01  
+*server_id=master-01  
 log_bin=1  
 general_log=1  
-slow_query_log=1  
+slow_query_log=1*  
 
 ![ACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/activar_logs.PNG)  
 
