@@ -30,7 +30,7 @@ general_log:     ***/var/lib/mysql/asix2.log***
 <br>
 
 
-**2. Comprovar estat logs**  
+**2. Comprovar l'estat dels logs**  
 Executar *SHOW GLOBAL VARIABLES LIKE '%log%*;  
 
 ![ESTAT_LOGS1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/estat_logs.PNG) 
@@ -40,7 +40,7 @@ Executar *SHOW GLOBAL VARIABLES LIKE '%log%*;
 <br>
 
 
-**3. Desactivar logs**  
+**3. Desactivar els logs**  
 Editar el fitxer */etc/percona-server.conf.d/mysqld.cnf*  
 Posar els logs a *0*  
 
@@ -48,3 +48,17 @@ Posar els logs a *0*
 
 Reiniciar el servei:  
 *systemctl restart mysql*  
+
+<br>
+
+
+**4. Activar els logs en temps d'execució**  
+general_log = *SET GLOBLAL general_log=ON*  
+slow_query_log = *SET GLOBAL slow_query_log=ON*  
+
+El log de binary (log_bin) no és pot activar en temps d’execució perquè és una variable de només lectura. Per tant s’ha d’activar cambiant 0 per 1 des del fitxer de configuració /etc/percona-server.conf.d/mysqld.cnf com s’ha fet anteriorment en el pas 1.  
+
+* Canviar el destí de general_log:  
+*SET GLOBAL log_output='TABLE';*  
+
+Es registra a la taula mysql.general_log  
