@@ -56,7 +56,7 @@ Reiniciar el servei:
 general_log = ***SET GLOBLAL general_log=ON***  
 slow_query_log = ***SET GLOBAL slow_query_log=ON***  
 
-El log de binary (log_bin) no és pot activar en temps d’execució perquè és una variable de només lectura. Per tant s’ha d’activar cambiant 0 per 1 des del fitxer de configuració /etc/percona-server.conf.d/mysqld.cnf com s’ha fet anteriorment en el pas 1.  
+El log de binary (log_bin) no és pot activar en temps d’execució perquè és una variable de només lectura. Per tant s’ha d’activar cambiant **0** per **1** des del fitxer de configuració /etc/percona-server.conf.d/mysqld.cnf com s’ha fet anteriorment en el pas 1.  
 
 * Canviar el destí de general_log:  
 ***SET GLOBAL log_output='TABLE';***  
@@ -67,3 +67,11 @@ Es registra a la taula mysql.general_log.
 
 ![MYSQL.GENERAL_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/taula_mysql.general_log.PNG)  
 
+<br>
+
+
+**5. Carregar BD Sakila**  
+***SOURCE sakila-schema.sql;***  
+![SOURCE_SAKILA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/source1.PNG)  
+
+![SAKILA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/sakila.PNG)  
