@@ -2,6 +2,7 @@
 
 **1. Creació del fitxer de configuració:**  
 * **Comprovar els logs activats per defecte:**  
+
 ***SHOW GLOBAL VARIABLES LIKE '%log%';***  
 
 ![LOGS_PER_DEFECTE1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/logs_activats_perdefecte.PNG)  
@@ -31,6 +32,7 @@ general_log:     ***/var/lib/mysql/asix2.log***
 
 
 **2. Comprovar l'estat dels logs**  
+
 Executar ***SHOW GLOBAL VARIABLES LIKE '%log%***;  
 
 ![ESTAT_LOGS1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/estat_logs.PNG) 
@@ -41,6 +43,7 @@ Executar ***SHOW GLOBAL VARIABLES LIKE '%log%***;
 
 
 **3. Desactivar els logs**  
+
 Editar el fitxer ***/etc/percona-server.conf.d/mysqld.cnf***  
 Posar els logs a ***0***  
 
@@ -53,6 +56,7 @@ Reiniciar el servei:
 
 
 **4. Activar els logs en temps d'execució**  
+
 general_log = ***SET GLOBLAL general_log=ON***  
 slow_query_log = ***SET GLOBAL slow_query_log=ON***  
 
@@ -71,6 +75,7 @@ Es registra a la taula mysql.general_log.
 
 
 **5. Carregar BD Sakila**  
+
 ***SOURCE sakila-schema.sql;***  
 ![SOURCE_SAKILA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/source1.PNG)  
 
@@ -80,6 +85,7 @@ Es registra a la taula mysql.general_log.
 
 
 **6. Número sentencies 'CREATE TABLE' dins del general_log**  
+
 ***SELECT COUNT (*)
       FROM mysql.general_log
    WHERE ARGUMENT LIKE 'CREATE TABLE%';***  
@@ -90,6 +96,7 @@ Es registra a la taula mysql.general_log.
 
 
 **7. Query mitjançant la funció SLEEP(11) registrada en el log slow_query_log**  
+
 ***SELECT SLEEP(11)***  
 
 ![SELECT_SLEEP](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/select_sleep.PNG)  
