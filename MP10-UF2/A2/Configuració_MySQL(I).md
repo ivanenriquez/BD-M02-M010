@@ -65,5 +65,5 @@ Es registra a la taula mysql.general_log.
 
 ![LOG_OUTPUT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/log_output.PNG)  
 
-![MYSQL.GENERAL_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/log_output.PNG)  
+![MYSQL.GENERAL_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/taula_mysql.general_log.PNG)  
 
