@@ -61,4 +61,9 @@ El log de binary (log_bin) no és pot activar en temps d’execució perquè és
 * Canviar el destí de general_log:  
 ***SET GLOBAL log_output='TABLE';***  
 
-Es registra a la taula mysql.general_log  
+Es registra a la taula mysql.general_log.  
+
+![LOG_OUTPUT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/log_output.PNG)  
+
+![MYSQL.GENERAL_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/log_output.PNG)  
+
