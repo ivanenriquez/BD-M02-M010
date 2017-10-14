@@ -10,7 +10,7 @@
 ![LOGS_PER_DEFECTE2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/logs_activats_perdefecte2.PNG)  
 
 * **Activar els logs**  
-Editar el fitxer */etc/percona-server.conf.d/mysql.cnf*. Afegir les següents línies:  
+Editar el fitxer ***/etc/percona-server.conf.d/mysql.cnf***. Afegir les següents línies:  
 
 *server_id=master-01  
 log_bin=1  
@@ -100,6 +100,7 @@ Es registra a la taula mysql.general_log.
 ***SELECT SLEEP(11)***  
 
 ![SELECT_SLEEP](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/select_sleep.PNG)  
+
 
 ***cat /var/lib/mysql/asix2-slow.log***  
 
