@@ -121,6 +121,6 @@ Es registra a la taula mysql.general_log.
 * **Crear i borrar una base dades amb nom foo**  
 
 Crear base dades: ***CREATE DATABASE foo;***  
-Borrar base dades: ***DROP DATABASE foo;****  
+Borrar base dades: ***DROP DATABASE foo;***  
 
 ![foo](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/foo.PNG)  
