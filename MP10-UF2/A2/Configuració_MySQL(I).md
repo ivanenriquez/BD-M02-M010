@@ -94,6 +94,8 @@ Es registra a la taula mysql.general_log.
 
 ![SELECT_SLEEP](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/select_sleep.PNG)  
 
+***cat /var/lib/mysql/asix2-slow.log***  
+
 ![SLOW_QUERY_LOG1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log1.PNG)  
 
 ![SLOW_QUERY_LOG2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log2.PNG) 
