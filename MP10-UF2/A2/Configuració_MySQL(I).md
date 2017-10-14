@@ -85,3 +85,15 @@ Es registra a la taula mysql.general_log.
    WHERE ARGUMENT LIKE 'CREATE TABLE%';***  
    
 ![COUNT_CREATE_TABLE](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/COUNT_CREATE_TABLE.PNG)  
+
+<br>
+
+
+**7. Query mitjançant la funció SLEEP(11) registrada en el log slow_query_log**  
+***SELECT SLEEP(11)***  
+
+![SELECT_SLEEP](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/select_sleep.PNG)  
+
+![SLOW_QUERY_LOG1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log1.PNG)  
+
+![SLOW_QUERY_LOG2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log2.PNG) 
