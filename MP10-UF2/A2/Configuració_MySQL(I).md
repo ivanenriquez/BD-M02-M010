@@ -2,7 +2,7 @@
 
 **1. Creació del fitxer de configuració:**  
 * **Comprovar els logs activats per defecte:**  
-*SHOW GLOBAL VARIABLES LIKE '%log%';*  
+***SHOW GLOBAL VARIABLES LIKE '%log%';***  
 
 ![LOGS_PER_DEFECTE1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/logs_activats_perdefecte.PNG)  
 
@@ -19,7 +19,7 @@ slow_query_log=1*
 ![ACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/activar_logs.PNG)  
 
 Un cop fet això reiniciar el servei:  
-*systemctl restart mysql*  
+***systemctl restart mysql***  
 
 
 **RUTES:**  
@@ -31,7 +31,7 @@ general_log:     ***/var/lib/mysql/asix2.log***
 
 
 **2. Comprovar l'estat dels logs**  
-Executar *SHOW GLOBAL VARIABLES LIKE '%log%*;  
+Executar ***SHOW GLOBAL VARIABLES LIKE '%log%***;  
 
 ![ESTAT_LOGS1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/estat_logs.PNG) 
 
@@ -41,24 +41,24 @@ Executar *SHOW GLOBAL VARIABLES LIKE '%log%*;
 
 
 **3. Desactivar els logs**  
-Editar el fitxer */etc/percona-server.conf.d/mysqld.cnf*  
-Posar els logs a *0*  
+Editar el fitxer ***/etc/percona-server.conf.d/mysqld.cnf***  
+Posar els logs a ***0***  
 
 ![DESACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/desactivar_logs.PNG)  
 
 Reiniciar el servei:  
-*systemctl restart mysql*  
+***systemctl restart mysql***  
 
 <br>
 
 
 **4. Activar els logs en temps d'execució**  
-general_log = *SET GLOBLAL general_log=ON*  
-slow_query_log = *SET GLOBAL slow_query_log=ON*  
+general_log = ***SET GLOBLAL general_log=ON***  
+slow_query_log = ***SET GLOBAL slow_query_log=ON***  
 
 El log de binary (log_bin) no és pot activar en temps d’execució perquè és una variable de només lectura. Per tant s’ha d’activar cambiant 0 per 1 des del fitxer de configuració /etc/percona-server.conf.d/mysqld.cnf com s’ha fet anteriorment en el pas 1.  
 
 * Canviar el destí de general_log:  
-*SET GLOBAL log_output='TABLE';*  
+***SET GLOBAL log_output='TABLE';***  
 
 Es registra a la taula mysql.general_log  
