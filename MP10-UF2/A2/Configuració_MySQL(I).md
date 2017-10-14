@@ -106,4 +106,21 @@ Es registra a la taula mysql.general_log.
 
 ![SLOW_QUERY_LOG1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log1.PNG)  
 
-![SLOW_QUERY_LOG2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log2.PNG) 
+![SLOW_QUERY_LOG2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log2.PNG)  
+
+<br>
+
+
+**8. Activar log_bin y borrar els logs anteriors amb 'RESET MASTER'**  
+
+![LOG_BIN_ACTIVAT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/binary_activat.PNG)  
+
+![RESET_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/reset_master.PNG)  
+
+
+* **Crear i borrar una base dades amb nom foo**  
+
+Crear base dades: ***CREATE DATABASE foo;***  
+Borrar base dades: ***DROP DATABASE foo;****  
+
+![foo](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/foo.PNG)  
