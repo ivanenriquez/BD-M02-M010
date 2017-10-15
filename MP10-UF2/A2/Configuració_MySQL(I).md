@@ -9,6 +9,7 @@
 
 ![LOGS_PER_DEFECTE2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/logs_activats_perdefecte2.PNG)  
 
+
 * **Activar els logs**  
 Editar el fitxer ***/etc/percona-server.conf.d/mysql.cnf***. Afegir les següents línies:  
 
@@ -148,3 +149,20 @@ Crear base dades: ***CREATE DATABASE bar;***
 Borrar base dades: ***DROP DATABASE bar;***  
 
 ![bar](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/bar.PNG)  
+
+
+* **Llistar els fitxers de logs **  
+
+
+* **Borrar el primer binary log**  
+
+![BORRAR_PRIMER_BINARY_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/borrar_primer_binary_log.PNG)  
+
+
+* **Mostrar el contingut del fitxer mysql.bin.000002**  
+
+***mysqlbinlog /var/lib/mysql/0.000002***  
+
+![mysql.bin.000002](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/000002.PNG)  
+
+
