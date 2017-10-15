@@ -3,7 +3,7 @@
 **1. Creació del fitxer de configuració:**  
 * **Comprovar els logs activats per defecte:**  
 
-***SHOW GLOBAL VARIABLES LIKE '%log%';***  
+*SHOW GLOBAL VARIABLES LIKE '%log%';*  
 
 ![LOGS_PER_DEFECTE1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/logs_activats_perdefecte.PNG)  
 
@@ -21,7 +21,7 @@ slow_query_log=1*
 ![ACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/activar_logs.PNG)  
 
 Un cop fet això reiniciar el servei:  
-***systemctl restart mysql***  
+*systemctl restart mysql*  
 
 
 **RUTES:**  
@@ -51,7 +51,7 @@ Posar els logs a ***0***
 ![DESACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/desactivar_logs.PNG)  
 
 Reiniciar el servei:  
-***systemctl restart mysql***  
+*systemctl restart mysql*  
 
 <br>
 
@@ -64,7 +64,8 @@ slow_query_log = ***SET GLOBAL slow_query_log=ON***
 El log de binary (log_bin) no és pot activar en temps d’execució perquè és una variable de només lectura. Per tant s’ha d’activar cambiant **0** per **1** des del fitxer de configuració /etc/percona-server.conf.d/mysqld.cnf com s’ha fet anteriorment en el pas 1.  
 
 * Canviar el destí de general_log:  
-***SET GLOBAL log_output='TABLE';***  
+
+*SET GLOBAL log_output='TABLE';*  
 
 Es registra a la taula mysql.general_log.  
 
@@ -77,7 +78,8 @@ Es registra a la taula mysql.general_log.
 
 **5. Carregar BD Sakila**  
 
-***SOURCE sakila-schema.sql;***  
+*SOURCE sakila-schema.sql;*  
+
 ![SOURCE_SAKILA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/source1.PNG)  
 
 ![SAKILA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/sakila.PNG)  
@@ -87,9 +89,9 @@ Es registra a la taula mysql.general_log.
 
 **6. Número sentencies 'CREATE TABLE' dins del general_log**  
 
-***SELECT COUNT (*)
+*SELECT COUNT (*)
       FROM mysql.general_log
-   WHERE ARGUMENT LIKE 'CREATE TABLE%';***  
+   WHERE ARGUMENT LIKE 'CREATE TABLE%';*  
    
 ![COUNT_CREATE_TABLE](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/COUNT_CREATE_TABLE.PNG)  
 
@@ -98,12 +100,12 @@ Es registra a la taula mysql.general_log.
 
 **7. Query mitjançant la funció SLEEP(11) registrada en el log slow_query_log**  
 
-***SELECT SLEEP(11)***  
+*SELECT SLEEP(11)*  
 
 ![SELECT_SLEEP](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/select_sleep.PNG)  
 
 
-***cat /var/lib/mysql/asix2-slow.log***  
+*cat /var/lib/mysql/asix2-slow.log*  
 
 ![SLOW_QUERY_LOG1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log1.PNG)  
 
@@ -129,7 +131,7 @@ Borrar base dades: ***DROP DATABASE foo;***
 
 * **Llistar els events i comprovar en quin fitxer log estan les sentències anteriors**  
 
-***SHOW BINLOG EVENTS;***  
+*SHOW BINLOG EVENTS;*  
 
 ![SOW_BINLOG_EVENTS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/binlog_events1.PNG)  
 
@@ -138,7 +140,7 @@ Borrar base dades: ***DROP DATABASE foo;***
 
 * **Realitzar un rotate log**  
 
-***FLUSH LOGS;***  
+*FLUSH LOGS;*  
 
 ![FLUSH_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/flush_logs.PNG)  
 
@@ -151,7 +153,7 @@ Borrar base dades: ***DROP DATABASE bar;***
 ![bar](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/bar.PNG)  
 
 
-* **Llistar els fitxers de logs **  
+* **Llistar els fitxers de logs**  
 
 
 * **Borrar el primer binary log**  
@@ -161,7 +163,7 @@ Borrar base dades: ***DROP DATABASE bar;***
 
 * **Mostrar el contingut del fitxer mysql.bin.000002**  
 
-***mysqlbinlog /var/lib/mysql/0.000002***  
+*mysqlbinlog /var/lib/mysql/0.000002*  
 
 ![mysql.bin.000002](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/000002.PNG)  
 
