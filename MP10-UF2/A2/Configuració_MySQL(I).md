@@ -196,9 +196,9 @@ Número d'event: 219
 ![CERTIFICATS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl1.PNG)  
 
 
-* **Editar el fitxer /etc/percona-server.conf.d/mysqld.cnf**  
+* **Editar el fitxer */etc/percona-server.conf.d/mysqld.cnf* **  
 
-Afegir les següents línies sota l'apartat [mysqld]  
+Afegir les següents línies sota l'apartat ***[mysqld]***  
 
 *# SSL
 ssl-ca=/etc/percona-server.conf.d/ca-cert.pem  
@@ -222,7 +222,7 @@ ssl-key=/etc/percona-server.conf.d /server-key.pem*
 
 * **Editar el fitxer /etc/percona-server.conf.d/mysqld.cnf**  
 
-Afegir les següents línies sota l'apartat [client]  
+Afegir les següents línies sota l'apartat ***[client]***  
 
 *#SSL
 ssl-cert=/etc/percona-server.conf.d/client-cert.pem  
