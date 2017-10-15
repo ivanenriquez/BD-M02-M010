@@ -201,11 +201,11 @@ Número d'event: 219
 Afegir les següents línies sota l'apartat [mysqld]  
 
 *# SSL
-ssl-ca=/etc/percona-server.conf.d/ca-cert.pem
-ssl-cert=/etc/percona-server.conf.d/server-cert.pem
+ssl-ca=/etc/percona-server.conf.d/ca-cert.pem  
+ssl-cert=/etc/percona-server.conf.d/server-cert.pem  
 ssl-key=/etc/percona-server.conf.d /server-key.pem*  
 
-![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl2.PNG)  
+![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl2.1.PNG)  
 
 
 * **Reiniciar el servei**  
@@ -225,5 +225,7 @@ ssl-key=/etc/percona-server.conf.d /server-key.pem*
 Afegir les següents línies sota l'apartat [client]  
 
 *#SSL
-ssl-cert=/etc/percona-server.conf.d/client-cert.pem
-ssl-key=/etc/percona-server.conf.d/client-key.pem*
+ssl-cert=/etc/percona-server.conf.d/client-cert.pem  
+ssl-key=/etc/percona-server.conf.d/client-key.pem*  
+
+![SSL_CLIENT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/SSL4.2.png)  
