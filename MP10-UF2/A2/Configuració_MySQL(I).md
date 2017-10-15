@@ -168,3 +168,10 @@ Borrar base dades: ***DROP DATABASE bar;***
 ![mysql.bin.000002](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/000002.PNG)  
 
 
+* **Número d'event de la creació de la base dades bar**  
+
+*mysqlbinlog /var/lib/mysql/0.000002*  
+
+Número d'event: 219  
+
+![NÚMERO_EVENT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/numero_event_bd-bar.PNG)  
