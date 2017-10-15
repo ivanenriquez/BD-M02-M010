@@ -124,3 +124,27 @@ Crear base dades: ***CREATE DATABASE foo;***
 Borrar base dades: ***DROP DATABASE foo;***  
 
 ![foo](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/foo.PNG)  
+
+
+* **Llistar els events i comprovar en quin fitxer log estan les sentències anteriors**  
+
+***SHOW BINLOG EVENTS;***  
+
+![SOW_BINLOG_EVENTS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/binlog_events1.PNG)  
+
+![MYSQLBINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/1.000001.PNG)  
+
+
+* **Realitzar un rotate log**  
+
+***FLUSH LOGS;***  
+
+![FLUSH_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/flush_logs.PNG)  
+
+
+* **Crear i borrar una base dades amb nom bar**  
+
+Crear base dades: ***CREATE DATABASE bar;***  
+Borrar base dades: ***DROP DATABASE bar;***  
+
+![bar](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/bar.PNG)  
