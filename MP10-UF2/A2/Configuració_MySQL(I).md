@@ -89,9 +89,9 @@ Es registra a la taula mysql.general_log.
 
 **6. Número sentencies 'CREATE TABLE' dins del general_log**  
 
-*"SELECT COUNT (*)
+SELECT COUNT (*)
       FROM mysql.general_log
-   WHERE ARGUMENT LIKE 'CREATE TABLE%';"*  
+   WHERE ARGUMENT LIKE 'CREATE TABLE%';  
    
 ![COUNT_CREATE_TABLE](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/COUNT_CREATE_TABLE.PNG)  
 
