@@ -1,4 +1,8 @@
-## CONFIGURACIÓ SGBD  
+### CONFIGURACIÓ SGBD  
+
+
+
+## CONFIGURACIÓ I COMPROVACIÓ DE LOGS
 
 **1. Creació del fitxer de configuració:**  
 * **Comprovar els logs activats per defecte:**  
@@ -175,3 +179,51 @@ Borrar base dades: ***DROP DATABASE bar;***
 Número d'event: 219  
 
 ![NÚMERO_EVENT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/numero_event_bd-bar.PNG)  
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+## CONFIGURACIÓ DEL SERVIDOR PERCONA-SERVER PER RELALITZAR CONNEXIONS SEGURES SOBRE SSL  
+
+* **Generar els certificats**  
+
+*mysql_ssl_rsa_setup –datadir=/etc/percona-server.conf/mysqld.cnf*  
+
+![CERTIFICATS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl1.PNG)  
+
+
+* **Editar el fitxer /etc/percona-server.conf.d/mysqld.cnf**  
+
+Afegir les següents línies sota l'apartat [mysqld]  
+
+*# SSL
+ssl-ca=/etc/percona-server.conf.d/ca-cert.pem
+ssl-cert=/etc/percona-server.conf.d/server-cert.pem
+ssl-key=/etc/percona-server.conf.d /server-key.pem*  
+
+![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl2.PNG)  
+
+
+* **Reiniciar el servei**  
+
+*systemctl restart mysql*  
+
+
+* **Crear un usuari per només permetre la connexió SSL**  
+
+![CREAR_USUARI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl3.PNG)  
+
+![PERMISOS_USUARI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl3.2.PNG)  
+
+
+* **Editar el fitxer /etc/percona-server.conf.d/mysqld.cnf**  
+
+Afegir les següents línies sota l'apartat [client]  
+
+*#SSL
+ssl-cert=/etc/percona-server.conf.d/client-cert.pem
+ssl-key=/etc/percona-server.conf.d/client-key.pem*
