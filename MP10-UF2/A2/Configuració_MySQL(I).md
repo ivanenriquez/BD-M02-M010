@@ -159,6 +159,10 @@ Borrar base dades: ***DROP DATABASE bar;***
 
 * **Llistar els fitxers de logs**  
 
+*SHOW MASTER LOGS;*  
+
+![SHOW_MASTER_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/tots_Els__logs.PNG)  
+
 
 * **Borrar el primer binary log**  
 
