@@ -180,7 +180,7 @@ Borrar base dades: ***DROP DATABASE bar;***
 ![BORRAR_PRIMER_BINARY_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/purge_master_logs.PNG)  
 
 
-* **Mostrar el contingut del fitxer mysql.bin.000002**  
+* **Mostrar el contingut del fitxer mysql.bin.000004**  
 
 *mysqlbinlog /var/lib/mysql/mysql-bin.000004*  
 
@@ -189,7 +189,7 @@ Borrar base dades: ***DROP DATABASE bar;***
 
 * **Número d'event de la creació de la base dades bar**  
 
-*mysqlbinlog /var/lib/mysql/0.000002*  
+*mysqlbinlog /var/lib/mysql/0.000004*  
 
 Número d'event: 219  
 
