@@ -206,7 +206,7 @@ Número d'event: 219
 
 * **Generar els certificats**  
 
-*mysql_ssl_rsa_setup –datadir=/etc/percona-server.conf/mysqld.cnf*  
+*mysql_ssl_rsa_setup --datadir=/etc/mysql-ssl*  
 
 ![CERTIFICATS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl1.PNG)  
 
@@ -220,7 +220,7 @@ ssl-ca=/etc/percona-server.conf.d/ca-cert.pem
 ssl-cert=/etc/percona-server.conf.d/server-cert.pem  
 ssl-key=/etc/percona-server.conf.d /server-key.pem*  
 
-![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl2.1.PNG)  
+![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl2.PNG)  
 
 
 * **Reiniciar el servei**  
@@ -234,13 +234,3 @@ ssl-key=/etc/percona-server.conf.d /server-key.pem*
 
 ![PERMISOS_USUARI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl3.2.PNG)  
 
-
-* **Editar el fitxer** */etc/percona-server.conf.d/mysqld.cnf*  
-
-Afegir les següents línies sota l'apartat ***[client]***  
-
-*#SSL
-ssl-cert=/etc/percona-server.conf.d/client-cert.pem  
-ssl-key=/etc/percona-server.conf.d/client-key.pem*  
-
-![SSL_CLIENT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/SSL4.2.png)  
