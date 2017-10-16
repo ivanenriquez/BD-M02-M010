@@ -65,10 +65,7 @@ Executar ***SHOW GLOBAL VARIABLES LIKE '%log%;***
 
 **3. Desactivar els logs**  
 
-Editar el fitxer ***/etc/percona-server.conf.d/mysqld.cnf***  
-Posar els logs a ***0***  
-
-![DESACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/desactivar_logs.PNG)  
+![DESACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ex3-desactivarlogs.PNG)  
 
 Reiniciar el servei:  
 *systemctl restart mysql*  
@@ -125,18 +122,16 @@ SELECT COUNT (*)
 ![SELECT_SLEEP](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/select_sleep.PNG)  
 
 
-*cat /var/lib/mysql/asix2-slow.log*  
+*SELECT * FROM slow_log*  
 
-![SLOW_QUERY_LOG1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log1.PNG)  
-
-![SLOW_QUERY_LOG2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_query_log2.PNG)  
+![SLOW_QUERY_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_log.PNG)  
 
 <br>
 
 
 **8. Activar log_bin y borrar els logs anteriors amb 'RESET MASTER'**  
 
-![LOG_BIN_ACTIVAT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/binary_activat.PNG)  
+![LOG_BIN_ACTIVAT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/log_bin.PNG)  
 
 ![RESET_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/reset_master.PNG)  
 
@@ -153,9 +148,9 @@ Borrar base dades: ***DROP DATABASE foo;***
 
 *SHOW BINLOG EVENTS;*  
 
-![SOW_BINLOG_EVENTS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/binlog_events1.PNG)  
+![SOW_BINLOG_EVENTS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/show_binlog_events.PNG)  
 
-![MYSQLBINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/1.000001.PNG)  
+![MYSQLBINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/foo_in_log.PNG)  
 
 
 * **Realitzar un rotate log**  
@@ -177,19 +172,19 @@ Borrar base dades: ***DROP DATABASE bar;***
 
 *SHOW MASTER LOGS;*  
 
-![SHOW_MASTER_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/tots_Els__logs.PNG)  
+![SHOW_MASTER_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/SHOW_MASTER_LOGS.PNG)  
 
 
 * **Borrar el primer binary log**  
 
-![BORRAR_PRIMER_BINARY_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/borrar_primer_binary_log.PNG)  
+![BORRAR_PRIMER_BINARY_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/purge_master_logs.PNG)  
 
 
 * **Mostrar el contingut del fitxer mysql.bin.000002**  
 
-*mysqlbinlog /var/lib/mysql/0.000002*  
+*mysqlbinlog /var/lib/mysql/mysql-bin.000004*  
 
-![mysql.bin.000002](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/000002.PNG)  
+![mysql-bin.000004](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/mysql-bin.000004.PNG)  
 
 
 * **Número d'event de la creació de la base dades bar**  
@@ -198,7 +193,7 @@ Borrar base dades: ***DROP DATABASE bar;***
 
 Número d'event: 219  
 
-![NÚMERO_EVENT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/numero_event_bd-bar.PNG)  
+![NÚMERO_EVENT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/mysql-bin.000004-event.PNG)  
 
 <br>
 <br>
