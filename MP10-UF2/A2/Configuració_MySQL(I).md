@@ -56,9 +56,9 @@ general_log:     ***/var/lib/mysql/logs/slow_query.log***
 
 Executar ***SHOW GLOBAL VARIABLES LIKE '%log%;***  
 
-![ESTAT_LOGS1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/estat_logs.PNG) 
+![ESTAT_LOGS1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/VARIABLES1.PNG)   
 
-![ESTAT_LOGS2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/estat_logs2.PNG)  
+![ESTAT_LOGS2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/VARIABLES2.PNG)  
 
 <br>
 
