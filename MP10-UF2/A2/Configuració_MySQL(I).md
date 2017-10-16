@@ -117,12 +117,12 @@ SELECT COUNT (*)
 
 **7. Query mitjançant la funció SLEEP(11) registrada en el log slow_query_log**  
 
-*SELECT SLEEP(11)*  
+*SELECT SLEEP(11);*  
 
 ![SELECT_SLEEP](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/select_sleep.PNG)  
 
 
-*SELECT * FROM slow_log*  
+*SELECT * FROM slow_log;*  
 
 ![SLOW_QUERY_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_log.PNG)  
 
