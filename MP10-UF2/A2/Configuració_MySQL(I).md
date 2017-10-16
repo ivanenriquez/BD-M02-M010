@@ -15,23 +15,39 @@
 
 
 * **Activar els logs**  
-Editar el fitxer ***/etc/percona-server.conf.d/mysql.cnf***. Afegir les següents línies:  
+Crear un fitxer de configuració i afegir les següents línies (***està ubicat a /etc/percona-server.conf.d/***):  
 
-*server_id=master-01  
-log_bin=1  
-general_log=1  
-slow_query_log=1*  
+![ACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/crear_fitxer_configuracio.PNG)  
 
-![ACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/activar_logs.PNG)  
+
+Crear el directori /var/lib/mysql/logs
+*mkdir /var/lib/mysql/logs*  
+
+Canviar els permisos i el propietari del fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
+
+Canviar permisos: ***chmod –R 644 /etc/percona-server.conf.d/configuracio_mysql.cnf***  
+Canviar propietari: ***chown –R mysql:mysql /etc/percona-server.conf.d/configuracio_mysql.cnf***  
+
+![CAMBIAR_PERMISOS_FITXER_CONFIGURACIO](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/permisos_fitxer_configuracio.PNG)  
+
+Canviar els permisos i el propietari al directori dels logs i els fitxers que hi hauràn en aquest:  
+
+Canviar permisos: ***chmod –R 750 /var/lib/mysql/logs***  
+Canviar propietari: ***chown –R mysql:mysql /var/lib/mysql/logs***  
+
+![CAMBIAR_PERMISOS_CARPETA_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/permisos_carpeta_logs.PNG)  
+Afegir el fitxer de configuració a /etc/my.cnf, en aquest cas el directori on està ubicat el fitxer ja està assignat dins my.cnf:  
+
+![/etc/my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/my.cnf.PNG)  
 
 Un cop fet això reiniciar el servei:  
 *systemctl restart mysql*  
 
 
 **RUTES:**  
-log_bin:         ***/var/lib/mysql/asix2-bin***  
-slow_query_log:  ***/var/lib/mysql/asix2-slow.log***  
-general_log:     ***/var/lib/mysql/asix2.log***  
+log_bin:         ***/var/lib/mysql/mysql-bin***  
+slow_query_log:  ***/var/lib/mysql/logs/general.log***  
+general_log:     ***/var/lib/mysql/logs/slow_query.log***  
 
 <br>
 
