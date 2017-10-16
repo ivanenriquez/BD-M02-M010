@@ -15,7 +15,7 @@
 
 
 * **Activar els logs**  
-Crear un fitxer de configuració i afegir les següents línies (està ubicat a ***/etc/percona-server.conf.d/***):  
+Crear un fitxer de configuració i afegir les següents línies (està ubicat a /etc/percona-server.conf.d/):  
 
 ![ACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/crear_fitxer_configuracio.PNG)  
 
