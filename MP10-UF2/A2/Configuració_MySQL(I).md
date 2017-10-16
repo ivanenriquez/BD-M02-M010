@@ -20,7 +20,7 @@ Crear un fitxer de configuració i afegir les següents línies (***està ubicat
 ![ACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/crear_fitxer_configuracio.PNG)  
 
 
-Crear el directori /var/lib/mysql/logs
+Crear el directori /var/lib/mysql/logs  
 *mkdir /var/lib/mysql/logs*  
 
 Canviar els permisos i el propietari del fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
@@ -36,6 +36,7 @@ Canviar permisos: ***chmod –R 750 /var/lib/mysql/logs***
 Canviar propietari: ***chown –R mysql:mysql /var/lib/mysql/logs***  
 
 ![CAMBIAR_PERMISOS_CARPETA_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/permisos_carpeta_logs.PNG)  
+
 Afegir el fitxer de configuració a /etc/my.cnf, en aquest cas el directori on està ubicat el fitxer ja està assignat dins my.cnf:  
 
 ![/etc/my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/my.cnf.PNG)  
