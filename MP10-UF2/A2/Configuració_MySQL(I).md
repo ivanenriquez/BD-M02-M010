@@ -206,10 +206,30 @@ Número d'event: 219
 
 * Generar els certificats  
 
-***mysql_ssl_rsa_setup --datadir=/etc/mysql-ssl***  
+Certificats del servidor:
 
-![CERTIFICATS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl1.1.PNG)  
+![CERTIFICAT1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/1.PNG)  
 
+![CERTIFICAT2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/2.PNG)  
+
+![CERTIFICAT3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/3.PNG)  
+
+
+Certificats del client:  
+
+![CERTIFICAT4](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/4.PNG)  
+
+![CERTIFICAT5](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/5.PNG)  
+
+
+* Verificar els certificats  
+
+![CERTIFICAT6](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/6.PNG)  
+
+
+* Reiniciar el servei  
+
+![CERTIFICAT7](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/7.PNG)  
 
 * Editar el fitxer ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
 
