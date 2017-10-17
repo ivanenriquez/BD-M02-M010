@@ -227,20 +227,25 @@ Certificats del client:
 ![CERTIFICAT6](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/6.PNG)  
 
 
+* Copiar els fitxers ***client-cert.pem***, ***ca.pem***, ***client-key.pem***
+
+![CERTIFICAT7](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/13.PNG)  
+
+
 * Reiniciar el servei  
 
-![CERTIFICAT7](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/7.PNG)  
+![CERTIFICAT8](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/7.PNG)
+
 
 * Editar el fitxer ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
-
 Afegir les següents línies sota l'apartat ***[mysqld]***  
 
-![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl2.PNG)  
+![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/8.PNG)  
 
 
 * Reiniciar el servei  
 
-***systemctl restart mysql***  
+![CERTIFICAT8](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/7.PNG)  
 
 
 * Crear un usuari per només permetre la connexió SSL  
