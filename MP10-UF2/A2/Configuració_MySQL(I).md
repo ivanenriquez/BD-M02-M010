@@ -215,11 +215,6 @@ Número d'event: 219
 
 Afegir les següents línies sota l'apartat ***[mysqld]***  
 
-*# SSL
-ssl-ca=/etc/percona-server.conf.d/ca-cert.pem  
-ssl-cert=/etc/percona-server.conf.d/server-cert.pem  
-ssl-key=/etc/percona-server.conf.d /server-key.pem*  
-
 ![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl2.PNG)  
 
 
