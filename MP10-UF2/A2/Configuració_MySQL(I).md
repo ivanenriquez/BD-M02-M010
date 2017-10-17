@@ -54,7 +54,7 @@ general_log:     ***/var/lib/mysql/logs/slow_query.log***
 
 **2. Comprovar l'estat dels logs**  
 
-Executar ***SHOW GLOBAL VARIABLES LIKE '%log%;***  
+Executar ***SHOW GLOBAL VARIABLES LIKE '%log%';***  
 
 ![ESTAT_LOGS1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/VARIABLES1.PNG)   
 
