@@ -208,7 +208,7 @@ Número d'event: 219
 
 *mysql_ssl_rsa_setup --datadir=/etc/mysql-ssl*  
 
-![CERTIFICATS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl1.PNG)  
+![CERTIFICATS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl1.1.PNG)  
 
 
 * **Editar el fitxer** */etc/percona-server.conf.d/configuracio_mysql.cnf*  
