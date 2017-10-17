@@ -242,10 +242,19 @@ Afegir les següents línies sota l'apartat ***[mysqld]***
 
 ![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/8.PNG)  
 
+Afegir les següents línies per connexions remotes:  
+![SSL_SERVER2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/11.PNG)  
+
 
 * Reiniciar el servei  
 
 ![CERTIFICAT8](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/7.PNG)  
+
+
+* Comprovar que el ssl està activat
+
+![CERTIFICAT9](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/10.PNG)  
+![CERTIFICAT10](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/16.JPG)  
 
 
 * Crear un usuari per només permetre la connexió SSL  
