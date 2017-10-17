@@ -184,7 +184,7 @@ Borrar base dades: ***DROP DATABASE bar;***
 
 ***mysqlbinlog /var/lib/mysql/mysql-bin.000004***  
 
-![mysql-bin.000004](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/mysql-bin.000004.PNG)  
+![mysql-bin.000004](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/mysql-bin.000004-event.PNG)  
 
 
 * Número d'event de la creació de la base dades bar  
