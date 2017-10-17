@@ -204,6 +204,13 @@ Número d'event: 219
 
 ## CONFIGURACIÓ DEL SERVIDOR PERCONA-SERVER PER REALITZAR CONNEXIONS SEGURES SOBRE SSL  
 
+* Crear un usuari per només permetre la connexió SSL  
+
+![CREAR_USUARI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/14.PNG)  
+
+![FLUSH_PRIVILEGES](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/15.PNG)  
+
+
 * Generar els certificats  
 
 Certificats del servidor:
@@ -255,11 +262,3 @@ Afegir les següents línies per connexions remotes:
 
 ![CERTIFICAT9](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/10.PNG)  
 ![CERTIFICAT10](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/16.JPG)  
-
-
-* Crear un usuari per només permetre la connexió SSL  
-
-![CREAR_USUARI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl3.PNG)  
-
-![PERMISOS_USUARI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl3.2.PNG)  
-
