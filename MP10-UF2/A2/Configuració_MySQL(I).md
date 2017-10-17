@@ -5,16 +5,16 @@
 ## CONFIGURACIÓ I COMPROVACIÓ DE LOGS
 
 **1. Creació del fitxer de configuració:**  
-* **Comprovar els logs activats per defecte:**  
+* Comprovar els logs activats per defecte:  
 
-*SHOW GLOBAL VARIABLES LIKE '%log%';*  
+***SHOW GLOBAL VARIABLES LIKE '%log%';***  
 
 ![LOGS_PER_DEFECTE1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/logs_activats_perdefecte.PNG)  
 
 ![LOGS_PER_DEFECTE2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/logs_activats_perdefecte2.PNG)  
 
 
-* **Activar els logs**  
+* Activar els logs  
 Crear un fitxer de configuració i afegir les següents línies (està ubicat a /etc/percona-server.conf.d/):  
 
 ![ACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/crear_fitxer_configuracio.PNG)  
@@ -41,7 +41,7 @@ Afegir el fitxer de configuració a **/etc/my.cnf**, en aquest cas el directori 
 ![/etc/my.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/my.cnf.PNG)  
 
 Un cop fet això reiniciar el servei:  
-*systemctl restart mysql*  
+***systemctl restart mysql***  
 
 
 **RUTES:**  
@@ -68,7 +68,7 @@ Executar ***SHOW GLOBAL VARIABLES LIKE '%log%;***
 ![DESACTIVAR_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ex3-desactivarlogs.PNG)  
 
 Reiniciar el servei:  
-*systemctl restart mysql*  
+***systemctl restart mysql***  
 
 <br>
 
@@ -82,7 +82,7 @@ El log de binary (log_bin) no és pot activar en temps d’execució perquè és
 
 * Canviar el destí de general_log:  
 
-*SET GLOBAL log_output='TABLE';*  
+***SET GLOBAL log_output='TABLE';***  
 
 Es registra a la taula mysql.general_log.  
 
@@ -95,7 +95,7 @@ Es registra a la taula mysql.general_log.
 
 **5. Carregar BD Sakila**  
 
-*SOURCE sakila-schema.sql;*  
+***SOURCE sakila-schema.sql;***  
 
 ![SOURCE_SAKILA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/source1.PNG)  
 
@@ -117,12 +117,12 @@ SELECT COUNT (*)
 
 **7. Query mitjançant la funció SLEEP(11) registrada en el log slow_query_log**  
 
-*SELECT SLEEP(11);*  
+***SELECT SLEEP(11);***  
 
 ![SELECT_SLEEP](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/select_sleep.PNG)  
 
 
-*SELECT * FROM slow_log;*  
+***SELECT * FROM slow_log;***  
 
 ![SLOW_QUERY_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/slow_log.PNG)  
 
@@ -136,7 +136,7 @@ SELECT COUNT (*)
 ![RESET_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/reset_master.PNG)  
 
 
-* **Crear i borrar una base dades amb nom foo**  
+* Crear i borrar una base dades amb nom foo  
 
 Crear base dades: ***CREATE DATABASE foo;***  
 Borrar base dades: ***DROP DATABASE foo;***  
@@ -144,23 +144,23 @@ Borrar base dades: ***DROP DATABASE foo;***
 ![foo](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/foo.PNG)  
 
 
-* **Llistar els events i comprovar en quin fitxer log estan les sentències anteriors**  
+* Llistar els events i comprovar en quin fitxer log estan les sentències anteriors  
 
-*SHOW BINLOG EVENTS;*  
+***SHOW BINLOG EVENTS;***  
 
 ![SOW_BINLOG_EVENTS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/show_binlog_events.PNG)  
 
 ![MYSQLBINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/foo_in_log.PNG)  
 
 
-* **Realitzar un rotate log**  
+* Realitzar un rotate log  
 
-*FLUSH LOGS;*  
+***FLUSH LOGS;***  
 
 ![FLUSH_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/flush_logs.PNG)  
 
 
-* **Crear i borrar una base dades amb nom bar**  
+* Crear i borrar una base dades amb nom bar  
 
 Crear base dades: ***CREATE DATABASE bar;***  
 Borrar base dades: ***DROP DATABASE bar;***  
@@ -168,28 +168,28 @@ Borrar base dades: ***DROP DATABASE bar;***
 ![bar](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/bar.PNG)  
 
 
-* **Llistar els fitxers de logs**  
+* Llistar els fitxers de logs  
 
-*SHOW MASTER LOGS;*  
+***SHOW MASTER LOGS;***  
 
 ![SHOW_MASTER_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/SHOW_MASTER_LOGS.PNG)  
 
 
-* **Borrar el primer binary log**  
+* Borrar el primer binary log  
 
 ![BORRAR_PRIMER_BINARY_LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/purge_master_logs.PNG)  
 
 
-* **Mostrar el contingut del fitxer mysql.bin.000004**  
+* Mostrar el contingut del fitxer mysql.bin.000004  
 
-*mysqlbinlog /var/lib/mysql/mysql-bin.000004*  
+***mysqlbinlog /var/lib/mysql/mysql-bin.000004***  
 
 ![mysql-bin.000004](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/mysql-bin.000004.PNG)  
 
 
-* **Número d'event de la creació de la base dades bar**  
+* Número d'event de la creació de la base dades bar  
 
-*mysqlbinlog /var/lib/mysql/0.000004*  
+***mysqlbinlog /var/lib/mysql/0.000004***  
 
 Número d'event: 219  
 
@@ -204,26 +204,26 @@ Número d'event: 219
 
 ## CONFIGURACIÓ DEL SERVIDOR PERCONA-SERVER PER REALITZAR CONNEXIONS SEGURES SOBRE SSL  
 
-* **Generar els certificats**  
+* Generar els certificats  
 
-*mysql_ssl_rsa_setup --datadir=/etc/mysql-ssl*  
+***mysql_ssl_rsa_setup --datadir=/etc/mysql-ssl***  
 
 ![CERTIFICATS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl1.1.PNG)  
 
 
-* **Editar el fitxer** */etc/percona-server.conf.d/configuracio_mysql.cnf*  
+* Editar el fitxer ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
 
 Afegir les següents línies sota l'apartat ***[mysqld]***  
 
 ![SSL_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl2.PNG)  
 
 
-* **Reiniciar el servei**  
+* Reiniciar el servei  
 
-*systemctl restart mysql*  
+***systemctl restart mysql***  
 
 
-* **Crear un usuari per només permetre la connexió SSL**  
+* Crear un usuari per només permetre la connexió SSL  
 
 ![CREAR_USUARI](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/ssl3.PNG)  
 
