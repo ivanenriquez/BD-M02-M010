@@ -1,8 +1,8 @@
-### CONFIGURACIÓ SGBD  
+## CONFIGURACIÓ SGBD  
 
 
 
-## CONFIGURACIÓ I COMPROVACIÓ DE LOGS
+### CONFIGURACIÓ I COMPROVACIÓ DE LOGS
 
 **1. Creació del fitxer de configuració:**  
 * Comprovar els logs activats per defecte:  
