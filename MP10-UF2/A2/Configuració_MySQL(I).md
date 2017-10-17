@@ -78,7 +78,7 @@ Reiniciar el servei:
 general_log = ***SET GLOBLAL general_log=ON***  
 slow_query_log = ***SET GLOBAL slow_query_log=ON***  
 
-El log de binary (log_bin) no és pot activar en temps d’execució perquè és una variable de només lectura. Per tant s’ha d’activar cambiant **0** per **1** des del fitxer de configuració /etc/percona-server.conf.d/mysqld.cnf com s’ha fet anteriorment en el pas 1.  
+El log de binary (log_bin) no és pot activar en temps d’execució perquè és una variable de només lectura. Per tant s’ha d’activar cambiant des del fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf*** com s’ha fet anteriorment en el pas 1.  
 
 * Canviar el destí de general_log:  
 
