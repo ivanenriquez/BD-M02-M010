@@ -193,7 +193,7 @@ Borrar base dades: ***DROP DATABASE bar;***
 
 Número d'event: 219  
 
-![NÚMERO_EVENT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/mysql-bin.000004-event.PNG)  
+![NÚMERO_EVENT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A2/imatges/mysql-bin.000004.PNG)  
 
 <br>
 <br>
