@@ -34,3 +34,9 @@ Comprovacions de que s'ha efectuat el canvi:
 
 
 **3. Motor d'emmagatzematge per defecte**  
+
+FORMA1:
+![FORMA1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex2.3.PNG)  
+
+FORMA2:
+![FORMA2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex3_forma2.PNG)  
