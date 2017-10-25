@@ -31,6 +31,7 @@ Comprovacions de que s'ha efectuat el canvi:
 
 Crear una base dades y dins d'aquesta una taula per comprovar que es crea amb el motor MyISAM
 
+***USE prova***
 ***SHOW TABLE STATUS;**  
 ![ENGINES4](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/show%20table%20status.JPG)  
 
@@ -71,3 +72,15 @@ FORMA2:
 
 ***SHOW ENGINES;***  
 ![MyRocks](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/comprovacio%20rocks.JPG)  
+
+<br>
+
+
+**5. Importar la BD sakila creant les taules amb el motor MyISAM**  
+
+***SHOW TABLE STATUS FROM SAKILA;***  
+![SAKILA1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.1.PNG)  
+
+***ls -ls /var/lib/mysql/sakila***  
+![SAKILA2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.2.PNG)  
+![SAKILA2.1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.2.1.PNG)  
