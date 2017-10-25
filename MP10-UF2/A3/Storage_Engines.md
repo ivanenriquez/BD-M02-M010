@@ -115,4 +115,58 @@ FORMA2:
 * Canviar ubicació dels fitxers del tablespace per defecte a ***/discs-mysql/***:  
 * Dos fitxers al tablespace de sistema:  
 * Mateixa mida inicial d'**1MB**:  
-* El tablespace ha de creixer de **1MB** en **1MB**: 
+* El tablespace ha de creixer de **1MB** en **1MB**:   
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+### ACTIVITAT 3. INNODB PART2  
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+### ACTIVITAT 4. INNODB PART3  
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+### ACTIVITAT 5. REDOLOG  
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+### ACTIVITAT 6. IMPLEMENTAR BD DISTRIBUÏDES  
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+### ACTIVITAT 7. STORAGE ENGINE CSV  
