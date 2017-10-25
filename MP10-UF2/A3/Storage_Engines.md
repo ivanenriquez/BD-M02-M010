@@ -49,4 +49,6 @@ FORMA2:
 
 * Instal·lar el paquet corresponent:  
 
-![INSTAL·LAR_MyRocks](
+![INSTAL·LAR_MyRocks](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/instalar%20percona-server.JPG)  
+
+![ACTIVAR MyRocks](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/habilitar%20rocks%20db.JPG)  
