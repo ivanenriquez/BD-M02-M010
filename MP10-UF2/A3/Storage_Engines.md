@@ -79,8 +79,23 @@ FORMA2:
 **5. Importar la BD sakila creant les taules amb el motor MyISAM**  
 
 ***SHOW TABLE STATUS FROM SAKILA;***  
-![SAKILA1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.1.PNG)  
+![SAKILA1_MYISAM](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.1.PNG)  
 
 ***ls -ls /var/lib/mysql/sakila***  
-![SAKILA2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.2.PNG)  
-![SAKILA2.1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.2.1.PNG)  
+![SAKILA2_MYISAM](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.2.PNG)  
+![SAKILA2.1_MYISAM](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.2.1.PNG)  
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+### ACTIVITAT 2. INNODB PART1  
+
+**1. Importar la BD sakila creant les taules amb el motor InnoDB**  
+
+***SHOW TABLE STATUS FROM SAKILA***  
+![SAKILA1_INNODB](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex1-activitat2PNG.PNG)  
+![SAKILA2_INNODB](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex2-activitat2PNG.PNG)  
