@@ -78,7 +78,7 @@ FORMA2:
 
 **5. Importar la BD sakila creant les taules amb el motor MyISAM**  
 
-***SHOW TABLE STATUS FROM SAKILA;***  
+***SHOW TABLE STATUS FROM sakila;***  
 ![SAKILA1_MYISAM](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.1.PNG)  
 
 ***ls -ls /var/lib/mysql/sakila***  
@@ -96,7 +96,7 @@ FORMA2:
 
 **1. Importar la BD sakila creant les taules amb el motor InnoDB**  
 
-***SHOW TABLE STATUS FROM SAKILA;***  
+***SHOW TABLE STATUS FROM sakila;***  
 ![SAKILA1_INNODB](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex1-activitat2PNG.PNG)  
 
 <br>
