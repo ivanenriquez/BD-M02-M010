@@ -32,7 +32,7 @@ Comprovacions de que s'ha efectuat el canvi:
 Crear una base dades y dins d'aquesta una taula per comprovar que es crea amb el motor MyISAM
 
 ***USE prova***  
-***SHOW TABLE STATUS;**  
+***SHOW TABLE STATUS;***  
 ![ENGINES4](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/show%20table%20status.JPG)  
 
 <br>
