@@ -41,3 +41,12 @@ FORMA1:
 FORMA2:  
 ![INFORMATION_SHEMA1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex3_forma2.1.PNG)  
 ![INFORMATION_SCHEMA2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex3_forma2.PNG)  
+
+<br>
+
+
+**4. Instal·lar i activar l'engine MyRocks**  
+
+* Instal·lar el paquet corresponent:  
+
+![INSTAL·LAR_MyRocks](
