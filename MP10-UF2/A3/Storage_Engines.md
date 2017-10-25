@@ -15,7 +15,7 @@
 
 **2. Canviar el motor d'emmagatzematge per defecte:**  
 
-* Editar el fitxer de configuració */etc/percona-server.conf.d/configuracio_mysql.cnf*  
+* Editar el fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
 
 Afegir la següent línia:  
 
@@ -26,8 +26,12 @@ Un cop fet això reiniciar el servei:
 
 Comprovacions de que s'ha efectuat el canvi:  
 
+***SHOW ENGINES;**  
 ![ENGINES3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex2.3.PNG)  
 
+Crear una base dades y dins d'aquesta una taula per comprovar que es crea amb el motor MyISAM
+
+***SHOW TABLE STATUS;**  
 ![ENGINES4](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/show%20table%20status.JPG)  
 
 <br>
@@ -36,10 +40,14 @@ Comprovacions de que s'ha efectuat el canvi:
 **3. Motor d'emmagatzematge per defecte**  
 
 FORMA1:
+
+***SHOW ENGINES;***
 ![SHOW_ENGINES](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex2.3.PNG)  
 
 FORMA2:  
 ![INFORMATION_SHEMA1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex3_forma2.1.PNG)  
+
+***SELECT * FROM engines WHERE SUPPORT='DEFAULT';***  
 ![INFORMATION_SCHEMA2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex3_forma2.PNG)  
 
 <br>
@@ -49,7 +57,7 @@ FORMA2:
 
 * Instal·lar el paquet corresponent:  
 
-*yum install Percona-Server-rocksdb-57.x86_64*
+***yum install Percona-Server-rocksdb-57.x86_64***  
 ![INSTAL·LAR_MyRocks](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/instalar%20percona-server.JPG)  
 
 * Activar MyRocks:
