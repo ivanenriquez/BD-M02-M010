@@ -15,5 +15,16 @@
 
 * Editar el fitxer de configuració */etc/percona-server.conf.d/configuracio_mysql.cnf*  
 
-Afegir la línia:  
+Afegir la següent línia:  
+
+![ENGINES2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex2.1.PNG)  
+
+Un cop fet això reiniciar el servei:  
+***systemctl restart mysql***  
+
+Comprovacions de que s'ha efectuat el canvi:  
+
+![ENGINES3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex2.3.PNG)  
+![ENGINES4](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/show%20table%20status.JPG)  
+
 
