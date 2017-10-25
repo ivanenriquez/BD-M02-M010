@@ -49,6 +49,10 @@ FORMA2:
 
 * Instal·lar el paquet corresponent:  
 
+*yum install Percona-Server-rocksdb-57.x86_64*
 ![INSTAL·LAR_MyRocks](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/instalar%20percona-server.JPG)  
 
+* Activar MyRocks:
+
+*ps-admin --enable-rocksdb -u root -ppatata*
 ![ACTIVAR MyRocks](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/habilitar%20rocks%20db.JPG)  
