@@ -96,6 +96,23 @@ FORMA2:
 
 **1. Importar la BD sakila creant les taules amb el motor InnoDB**  
 
-***SHOW TABLE STATUS FROM SAKILA***  
+***SHOW TABLE STATUS FROM SAKILA;***  
 ![SAKILA1_INNODB](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex1-activitat2PNG.PNG)  
+
+<br>
+
+
+**2. Fitxers de dades**  
+
+***ls -ls /var/lib/mysql***  
 ![SAKILA2_INNODB](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex2-activitat2PNG.PNG)  
+
+<br>
+
+
+**3. Canviar configuració MySQL**  
+
+* Canviar ubicació dels fitxers del tablespace per defecte a ***/discs-mysql/***:  
+* Dos fitxers al tablespace de sistema:  
+* Mateixa mida inicial d'**1MB**:  
+* El tablespace ha de creixer de **1MB** en **1MB**: 
