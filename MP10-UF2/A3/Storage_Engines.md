@@ -112,7 +112,7 @@ FORMA2:
 
 **3. Canviar configuració MySQL**  
 
-* Canviar ubicació dels fitxers del tablespace per defecte a ***/discs-mysql/***:  
+* Canviar ubicació dels fitxers del tablespace per defecte a **/discs-mysql/**:  
 * Dos fitxers al tablespace de sistema:  
 * Mateixa mida inicial d'**1MB**:  
 * El tablespace ha de creixer de **1MB** en **1MB**:   
