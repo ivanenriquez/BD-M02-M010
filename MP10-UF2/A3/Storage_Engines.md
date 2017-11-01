@@ -166,6 +166,7 @@ FORMA2:
 **3. Pàgines modificades (dirty pages) i total pàgines**  
 
 ![DIRTY_PAGES](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/dirty_pages.PNG)  
+
 <br>
 <br>
 <br>
@@ -175,8 +176,94 @@ FORMA2:
 
 ### ACTIVITAT 6. IMPLEMENTAR BD DISTRIBUÏDES  
 
+* Configuració firewall servidor1:  
+
+![FIREWALL1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/configuració_firewall.PNG)  
 
 
+**(EN EL SERVIDOR 1 LES TAULES JA ESTAN CREADES)**  
+
+
+**OPCIÓ1**  
+
+***Servidor2 (FEDERATED)***  
+
+* Crear una taula:  
+
+***USE sakila;
+CREATE TABLE actor (
+	  actor_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+	  first_name VARCHAR(45) NOT NULL,
+	  last_name VARCHAR(45) NOT NULL,
+	  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	  PRIMARY KEY  (actor_id),
+	  KEY idx_actor_last_name (last_name)
+	)
+ENGINE=FEDERATED
+CONNECTION='mysql://root:patata@192.168.109.144:3306/sakila/actor';***  
+
+![FEDERATED1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura1.PNG)  
+
+
+***Servidor1***  
+
+* Inserir dades:  
+
+***INSERT INTO actor (first_name,last_name)
+VALUES ('ivan','enriquez');***  
+
+![INSERT1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura2.PNG)  
+
+
+***Servidor2 (FEDERATED)***  
+
+* Mostrar les dades:  
+
+![SELECT1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/select1_servidor2.PNG)  
+
+
+
+**OPCIÓ2**  
+
+***Servidor2***  
+
+* Crear una connexió:  
+
+***CREATE SERVER connexio1
+FOREIGN DATA WRAPPER mysql
+OPTIONS (USER 'root', PASSWORD 'patata', HOST '192.168.109.144', PORT 3306, DATABASE 'sakila');***  
+
+![CREATE_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura3.PNG)  
+
+
+* Crear una taula:  
+
+***USE sakila;
+CREATE TABLE country (
+  country_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  country VARCHAR(50) NOT NULL,
+  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY  (country_id)
+)
+ENGINE=FEDERATED
+CONNECTION='connexio1/country';***  
+
+![FEDERATED2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura4.PNG)  
+
+
+* Inserir dades:  
+
+***INSERT INTO country (country)
+VALUES ('Franca');***  
+
+![INSERT2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura5.PNG)  
+
+
+***Servidor1***  
+
+* Mostrar les dades: 
+
+![SELECT2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/select2_servidor2.PNG)  
 
 <br>
 <br>
