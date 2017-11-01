@@ -148,7 +148,7 @@ FORMA2:
 
 ### ACTIVITAT 5. REDOLOG  
 
-**1. Comprovar *Innodb Log Checkpointing* **  
+**1. Comprovar *Innodb Log Checkpointing***  
 
 ***SHOW ENGINE INNODB STATUS\G***  
   
@@ -165,7 +165,7 @@ FORMA2:
 
 **3. Pàgines modificades (dirty pages) i total pàgines**  
 
-![https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/dirty_pages.PNG]  
+![DIRTY_PAGES](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/dirty_pages.PNG)  
 <br>
 <br>
 <br>
