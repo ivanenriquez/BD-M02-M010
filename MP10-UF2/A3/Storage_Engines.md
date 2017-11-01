@@ -190,16 +190,16 @@ FORMA2:
 
 * Crear una taula:  
 
-***USE sakila;
-CREATE TABLE actor (
-	  actor_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-	  first_name VARCHAR(45) NOT NULL,
-	  last_name VARCHAR(45) NOT NULL,
-	  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	  PRIMARY KEY  (actor_id),
-	  KEY idx_actor_last_name (last_name)
-	)
-ENGINE=FEDERATED
+***USE sakila;  
+CREATE TABLE actor (  
+	  actor_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,  
+	  first_name VARCHAR(45) NOT NULL,  
+	  last_name VARCHAR(45) NOT NULL,  
+	  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  
+	  PRIMARY KEY  (actor_id),  
+	  KEY idx_actor_last_name (last_name)  
+	)  
+ENGINE=FEDERATED  
 CONNECTION='mysql://root:patata@192.168.109.144:3306/sakila/actor';***  
 
 ![FEDERATED1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura1.PNG)  
@@ -209,7 +209,7 @@ CONNECTION='mysql://root:patata@192.168.109.144:3306/sakila/actor';***
 
 * Inserir dades:  
 
-***INSERT INTO actor (first_name,last_name)
+***INSERT INTO actor (first_name,last_name)  
 VALUES ('ivan','enriquez');***  
 
 ![INSERT1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura2.PNG)  
@@ -229,8 +229,8 @@ VALUES ('ivan','enriquez');***
 
 * Crear una connexió:  
 
-***CREATE SERVER connexio1
-FOREIGN DATA WRAPPER mysql
+***CREATE SERVER connexio1  
+FOREIGN DATA WRAPPER mysql  
 OPTIONS (USER 'root', PASSWORD 'patata', HOST '192.168.109.144', PORT 3306, DATABASE 'sakila');***  
 
 ![CREATE_SERVER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura3.PNG)  
@@ -238,14 +238,14 @@ OPTIONS (USER 'root', PASSWORD 'patata', HOST '192.168.109.144', PORT 3306, DATA
 
 * Crear una taula:  
 
-***USE sakila;
-CREATE TABLE country (
-  country_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  country VARCHAR(50) NOT NULL,
-  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY  (country_id)
-)
-ENGINE=FEDERATED
+***USE sakila;  
+CREATE TABLE country (  
+  country_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,  
+  country VARCHAR(50) NOT NULL,  
+  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  
+  PRIMARY KEY  (country_id)  
+)  
+ENGINE=FEDERATED  
 CONNECTION='connexio1/country';***  
 
 ![FEDERATED2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura4.PNG)  
@@ -253,7 +253,7 @@ CONNECTION='connexio1/country';***
 
 * Inserir dades:  
 
-***INSERT INTO country (country)
+***INSERT INTO country (country)  
 VALUES ('Franca');***  
 
 ![INSERT2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura5.PNG)  
