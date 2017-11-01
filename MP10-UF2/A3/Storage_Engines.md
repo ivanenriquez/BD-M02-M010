@@ -296,7 +296,7 @@ No cal fer cap configuració ja que csv storage engine està activat per defecte
 
 **DML**  
 
-****INSERT INTO actor (actor_id,first_name,last_name)
+***INSERT INTO actor (actor_id,first_name,last_name)
 VALUES (10001,'ivan','enriquez');***  
 
 ![INSERT_CSV](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/dml_csv.PNG)  
