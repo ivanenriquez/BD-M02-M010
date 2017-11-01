@@ -276,3 +276,32 @@ VALUES ('Franca');***
 
 
 ### ACTIVITAT 7. STORAGE ENGINE CSV  
+
+**CONFIGURACIONS**  
+
+No cal fer cap configuració ja que csv storage engine està activat per defecte en MySQL.  
+
+
+**DDL**  
+
+***CREATE TABLE actor (
+	  actor_id SMALLINT UNSIGNED NOT NULL,
+	  first_name VARCHAR(45) NOT NULL,
+	  last_name VARCHAR(45) NOT NULL,
+	  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP	  
+	)ENGINE=CSV;***  
+	
+![DDL_CSV](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ddl_csv.PNG)  
+
+
+**DML**  
+
+****INSERT INTO actor (actor_id,first_name,last_name)
+VALUES (10001,'ivan','enriquez');***  
+
+![INSERT_CSV](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/dml_csv.PNG)  
+
+
+**FITXER CSV**  
+
+![FITXER_CSV](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/fitxer_csv.PNG)  
