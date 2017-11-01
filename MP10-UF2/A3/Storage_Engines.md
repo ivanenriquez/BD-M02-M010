@@ -158,11 +158,14 @@ FORMA2:
   
   **1.2 Últim LSN actualitzat a disc**  
   
-  ![LSN2]()  
+  ![LSN2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/lsn_disk.PNG)  
   
   **1.3 Últim LSN que se li ha fet Checkpoint**  
   ![LSN3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/last_checkpoint.PNG)  
 
+**3. Pàgines modificades (dirty pages) i total pàgines**  
+
+![https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/dirty_pages.PNG]  
 <br>
 <br>
 <br>
