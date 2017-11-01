@@ -148,7 +148,20 @@ FORMA2:
 
 ### ACTIVITAT 5. REDOLOG  
 
+**1. Comprovar *Innodb Log Checkpointing* **  
 
+***SHOW ENGINE INNODB STATUS\G***  
+  
+  **1.1 LSN (Log Sequence Number)** 
+  
+  ![LSN1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/lsn.PNG)  
+  
+  **1.2 Últim LSN actualitzat a disc**  
+  
+  ![LSN2]()  
+  
+  **1.3 Últim LSN que se li ha fet Checkpoint**  
+  ![LSN3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/last_checkpoint.PNG)  
 
 <br>
 <br>
