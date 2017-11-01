@@ -204,6 +204,7 @@ CONNECTION='mysql://root:patata@192.168.109.144:3306/sakila/actor';***
 
 ![FEDERATED1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura1.PNG)  
 
+<br>
 
 ***Servidor1***  
 
@@ -214,6 +215,7 @@ VALUES ('ivan','enriquez');***
 
 ![INSERT1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura2.PNG)  
 
+<br>
 
 ***Servidor2 (FEDERATED)***  
 
@@ -221,7 +223,7 @@ VALUES ('ivan','enriquez');***
 
 ![SELECT1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/select1_servidor2.PNG)  
 
-
+<br>
 
 **OPCIÓ2**  
 
@@ -258,6 +260,7 @@ VALUES ('Franca');***
 
 ![INSERT2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/Captura5.PNG)  
 
+<br>
 
 ***Servidor1***  
 
