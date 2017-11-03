@@ -82,8 +82,7 @@ FORMA2:
 ![SAKILA1_MYISAM](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.1.PNG)  
 
 ***ls -ls /var/lib/mysql/sakila***  
-![SAKILA2_MYISAM](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.2.PNG)  
-![SAKILA2.1_MYISAM](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ex5.2.1.PNG)  
+![SAKILA2_MYISAM](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ls%20sakila.PNG)  
 
 <br>
 <br>
