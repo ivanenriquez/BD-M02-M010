@@ -133,7 +133,7 @@ FORMA2:
 ![/discs-mysql/disk1,disk2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/discs-msyql%2Cdisks.PNG)  
 
 
-* Eliminar els fitxer redolog ***lb_logfile0, lb_logfile1*** ubicats a ***/var/lib/mysql***  
+* Eliminar els fitxer redolog ***ib_logfile0, ib_logfile1*** ubicats a ***/var/lib/mysql***  
 
 ![ib_logfile](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ib_logfile.PNG)  
 
