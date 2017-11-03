@@ -111,10 +111,36 @@ FORMA2:
 
 **3. Canviar configuració MySQL**  
 
-* Canviar ubicació dels fitxers del tablespace per defecte a **/discs-mysql/**:  
-* Dos fitxers al tablespace de sistema:  
-* Mateixa mida inicial d'**1MB**:  
-* El tablespace ha de creixer de **1MB** en **1MB**:   
+* Deshabilitar SELINUX:  
+	* Editar el fitxer ***/etc/sysconfig/selinux***, i escriure ***selinux=disabled***  
+
+![SELINUX1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/selinux.PNG)  
+
+
+* Comprovar que ***selinux*** s'ha desactivat:  
+
+![SELINUX2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/selinux2.PNG)  
+
+
+* Editar el fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf*** i afegir les següents línies:  
+
+![INNODB_FILE_PATH](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/innodb_file_path.PNG)  
+
+
+* Crear els directoris i donar els permisos corresponents:  
+
+![/discs-mysql](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/carpeta%20discs-mysql.PNG)  
+![/discs-mysql/disk1,disk2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/discs-msyql%2Cdisks.PNG)  
+
+
+* Eliminar els fitxer redolog ***lb_logfile0, lb_logfile1*** ubicats a ***/var/lib/mysql***  
+
+![ib_logfile](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ib_logfile.PNG)  
+
+
+* Reiniciar el servei:  
+
+***systemctl restart mysql***  
 
 <br>
 <br>
