@@ -151,7 +151,30 @@ FORMA2:
 
 ### ACTIVITAT 3. INNODB PART2  
 
+* Crear els directoris i donar els permisos corresponents:  
 
+![/tspaces](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/crear_tspaces.PNG)  
+
+
+* Editar el fitxer de configuració ***/etc/percona-server.conf.d***  
+
+Comentar les línies de ***innodb*** i posar a ***1 innodb_file_per_table***  
+
+![crear_tspaces](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/innodb_file_per_table.PNG)  
+
+
+* Editar el fitxer de configuració ***/etc/percona-server.conf.d/mysqld.cnf***  
+
+Canviar el directori de dades per defecte de mysql ***datadir*** per ***tspaces***  
+
+![datadir](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/datadir.PNG)  
+
+
+* Copiar els arxius de ***/var/lib/mysql*** a ***/tspaces/***  
+
+***cp -a /var/lib/mysql/. /tspaces/***  
+
+![copiar_arxius_a_tspaces](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/copiar_arxius_a_tspaces.PNG)  
 
 <br>
 <br>
