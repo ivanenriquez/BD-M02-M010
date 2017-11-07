@@ -176,6 +176,13 @@ Canviar el directori de dades per defecte de mysql ***datadir*** per ***tspaces*
 
 ![copiar_arxius_a_tspaces](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/copiar_arxius_a_tspaces.PNG)  
 
+
+* Comprovar que s'ha efectuat el canvi de directori de dades per defecte:  
+
+***SELECT @@datadir***  
+
+![@@datadir](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/%40%40datadir.PNG)  
+
 <br>
 <br>
 <br>
