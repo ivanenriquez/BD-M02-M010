@@ -309,10 +309,10 @@ No cal fer cap configuració ja que csv storage engine està activat per defecte
 
 **DDL**  
 
-***CREATE TABLE actor (
-	  actor_id SMALLINT UNSIGNED NOT NULL,
-	  first_name VARCHAR(45) NOT NULL,
-	  last_name VARCHAR(45) NOT NULL,
+***CREATE TABLE actor (  
+	  actor_id SMALLINT UNSIGNED NOT NULL,  
+	  first_name VARCHAR(45) NOT NULL,  
+	  last_name VARCHAR(45) NOT NULL,  
 	  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP	  
 	)ENGINE=CSV;***  
 	
