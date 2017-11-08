@@ -196,7 +196,7 @@ Canviar el directori de dades per defecte de mysql ***datadir*** per ***tspaces*
 
 USE sakila;  
 
-CREATE TABLESPACE `ts1`  
+CREATE TABLESPACE "`ts1`" 
 ADD DATAFILE '/discs-mysql/disk1/ts1.ibd'  
 ENGINE=InnoDB;  
 ALTER TABLE actor TABLESPACE ts1;  
