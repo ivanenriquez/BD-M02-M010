@@ -194,14 +194,13 @@ Canviar el directori de dades per defecte de mysql ***datadir=/tspaces/***
 
 * Crear un tablespace anomenat ***ts1*** situat a ***/discs-mysql/disk1*** i afegir-hi les taules ***actor, address i category***  
 
-USE sakila;  
-
-CREATE TABLESPACE `ts1` 
+***USE sakila;
+CREATE TABLESPACE `ts1`  
 ADD DATAFILE '/discs-mysql/disk1/ts1.ibd'  
 ENGINE=InnoDB;  
 ALTER TABLE actor TABLESPACE ts1;  
 ALTER TABLE address TABLESPACE ts1;  
-ALTER TABLE category TABLESPACE ts1;  
+ALTER TABLE category TABLESPACE ts1;***  
 
 ![ts1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ts1.PNG)  
 
