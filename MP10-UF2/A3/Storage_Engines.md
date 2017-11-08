@@ -196,7 +196,7 @@ Canviar el directori de dades per defecte de mysql ***datadir*** per ***tspaces*
 
 USE sakila;  
 
-CREATE TABLESPACE "`ts1`" 
+CREATE TABLESPACE `ts1` 
 ADD DATAFILE '/discs-mysql/disk1/ts1.ibd'  
 ENGINE=InnoDB;  
 ALTER TABLE actor TABLESPACE ts1;  
@@ -208,13 +208,12 @@ ALTER TABLE category TABLESPACE ts1;
 
 * Crear un tablespace anomenat ***ts2*** situat a ***/discs-mysql/disk2*** i afegir-hi la resta de taules***  
 
-USE sakila;
-
+***USE sakila;
 CREATE TABLESPACE `ts2`  
 ADD DATAFILE '/discs-mysql/disk2/ts2.ibd'  
-ENGINE=InnoDB;  
+ENGINE=InnoDB;***  
 
-ALTER TABLE city TABLESPACE ts2;  
+***ALTER TABLE city TABLESPACE ts2;  
 ALTER TABLE country  TABLESPACE ts2;  
 ALTER TABLE customer TABLESPACE ts2;  
 ALTER TABLE film TABLESPACE ts2;  
@@ -226,9 +225,29 @@ ALTER TABLE language TABLESPACE ts2;
 ALTER TABLE payment TABLESPACE ts2;  
 ALTER TABLE rental TABLESPACE ts2;  
 ALTER TABLE staff TABLESPACE ts2;  
-ALTER TABLE store TABLESPACE ts2;  
+ALTER TABLE store TABLESPACE ts2;***  
 
 ![ts2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ts2.PNG)  
+
+
+* Instruccions DML  
+
+***ts1***  
+
+***USE sakila;  
+INSERT INTO actor(first_name, last_name)  
+	VALUES("david","ruiz");***  
+
+![INSERT_INTO_TS1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/insert_into_ts1.PNG)  
+
+
+***ts2***  
+
+***USE sakila;  
+INSERT INTO country(country)  
+	VALUES("Espanya");***  
+
+![INSERT_INTO_TS2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/insert_into_ts2.PNG)  
 
 <br>
 <br>
