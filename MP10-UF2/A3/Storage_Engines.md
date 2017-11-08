@@ -192,7 +192,43 @@ Canviar el directori de dades per defecte de mysql ***datadir*** per ***tspaces*
 
 ### ACTIVITAT 4. INNODB PART3  
 
+* Crear un tablespace anomenat ***ts1*** situat a ***/discs-mysql/disk1*** i afegir-hi les taules ***actor, address i category***  
 
+USE sakila;  
+
+CREATE TABLESPACE `ts1`  
+ADD DATAFILE '/discs-mysql/disk1/ts1.ibd'  
+ENGINE=InnoDB;  
+ALTER TABLE actor TABLESPACE ts1;  
+ALTER TABLE address TABLESPACE ts1;  
+ALTER TABLE category TABLESPACE ts1;  
+
+![ts1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ts1.PNG)  
+
+
+* Crear un tablespace anomenat ***ts2*** situat a ***/discs-mysql/disk2*** i afegir-hi la resta de taules***  
+
+USE sakila;
+
+CREATE TABLESPACE `ts2`  
+ADD DATAFILE '/discs-mysql/disk2/ts2.ibd'  
+ENGINE=InnoDB;  
+
+ALTER TABLE city TABLESPACE ts2;  
+ALTER TABLE country  TABLESPACE ts2;  
+ALTER TABLE customer TABLESPACE ts2;  
+ALTER TABLE film TABLESPACE ts2;  
+ALTER TABLE film_actor TABLESPACE ts2;  
+ALTER TABLE film_category TABLESPACE ts2;  
+ALTER TABLE film_text TABLESPACE ts2;  
+ALTER TABLE inventory TABLESPACE ts2;  
+ALTER TABLE language TABLESPACE ts2;  
+ALTER TABLE payment TABLESPACE ts2;  
+ALTER TABLE rental TABLESPACE ts2;  
+ALTER TABLE staff TABLESPACE ts2;  
+ALTER TABLE store TABLESPACE ts2;  
+
+![ts2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/ts2.PNG)  
 
 <br>
 <br>
