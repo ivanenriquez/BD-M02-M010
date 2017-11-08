@@ -165,7 +165,7 @@ Comentar les línies de ***innodb*** i posar a ***1 innodb_file_per_table***
 
 * Editar el fitxer de configuració ***/etc/percona-server.conf.d/mysqld.cnf***  
 
-Canviar el directori de dades per defecte de mysql ***datadir*** per ***tspaces***  
+Canviar el directori de dades per defecte de mysql ***datadir=/tspaces/***  
 
 ![datadir](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A3/imatges/datadir.PNG)  
 
@@ -208,7 +208,7 @@ ALTER TABLE category TABLESPACE ts1;
 
 * Crear un tablespace anomenat ***ts2*** situat a ***/discs-mysql/disk2*** i afegir-hi la resta de taules***  
 
-***USE sakila;
+***USE sakila;  
 CREATE TABLESPACE `ts2`  
 ADD DATAFILE '/discs-mysql/disk2/ts2.ibd'  
 ENGINE=InnoDB;***  
