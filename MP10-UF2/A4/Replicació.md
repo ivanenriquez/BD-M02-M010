@@ -47,7 +47,7 @@ Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2
 <br>
 
 
-* Comprovar que s'ha aplicat la configuració de log-bin  
+* Comprovar que s'ha aplicat la configuració de ***log-bin***  
 
 ![LOG-BIN](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura3.JPG)  
 
