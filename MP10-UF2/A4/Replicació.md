@@ -54,6 +54,64 @@ Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2
 <br>
 
 
+* Realitzar una instrucció DML  
+
+![INSERT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura4.JPG)  
+
+<br>
+
+
+* Mostrar el contingut del fitxer ***ienriquezrep.000001***  
+
+***mysqlbinlog ienriquezrep.000001***
+
+![mysqlbinlog](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura5.JPG)  
+
+
+* Fer un ***FLUSH LOGS***  
+
+![FLUSH_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura6.JPG)  
+
+<br>
+
+
+* Comprovar els logs com a master  
+
+![MASTER_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura7.JPG)  
+
+<br>
+<br>
+
+
+**CONFIGURACIÓ SLAVE I MASTER**  
+
+* IP de cadascuna de les màquines(master, slave)  
+
+MASTER: 192.168.59.2  
+SLAVE: 192.168.59.3  
+
+<br>
+
+
+* Crear un backup de la BD a la màquina master  
+
+***mysqldump –-user=root –-password=vostrepwd -–master-data=2 sakila > /tmp/master_backup.sql***  
+
+<br>
+
+
+* Editar el fitxer ***master_backup.sql*** i buscar la línia ***--CHANGE MASTER TO*** amb els valors ***MASTER_LOG_FILE*** i ***MASTER_LOG_POS***  
+
+![MASTER_BACKUP.SQL](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura8.JPG)  
+
+<br>
+
+***SLAVE***  
+
+* Para el servei  
+
+***systemctl stop mysql***  
+
 <br>
 <br>
 <br>
