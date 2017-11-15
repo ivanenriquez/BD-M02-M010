@@ -11,19 +11,15 @@
 
 ![CP_CONFIGURACIO_MYSQL](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura1.JPG)  
 
-<br>
-
 
 * Editar el fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
 
-Activar el paràmetre log-bin  
+Activar el paràmetre ***log-bin*** amb el nom <PRIMER LLETRA DEL NOM + 1r COGNOM>rep    
 Verificar que el paràmetre ***server_id*** està activat amb un valor numèric  
 Canviar el paràmetre ***innodb_log_buffer*** a ***10M***  
 Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2  
 
 ![CONFIGURACIO_MYSQL](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura2.JPG)  
-
-<br>
 
 
 * Parar el servei  
