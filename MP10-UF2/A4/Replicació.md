@@ -13,9 +13,22 @@
 
 <br>
 
-* Editar el fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf*** i afegir les següents línies:  
+
+* Editar el fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
+
+Activar el paràmetre log-bin  
+Verificar que el paràmetre ***server_id*** està activat amb un valor numèric  
+Canviar el paràmetre ***innodb_log_buffer*** a ***10M***  
+Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2  
 
 ![CONFIGURACIO_MYSQL](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura2.JPG)  
+
+<br>
+
+
+* Parar el servei  
+
+***systemctl stop mysql***
 
 <br>
 <br>
