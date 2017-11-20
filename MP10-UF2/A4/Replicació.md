@@ -108,7 +108,7 @@ SLAVE: 192.168.59.3
 
 ***SLAVE***  
 
-* Para el servei  
+* Parar el servei  
 
 ***systemctl stop mysql***  
 
