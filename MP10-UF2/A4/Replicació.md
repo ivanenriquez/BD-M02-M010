@@ -42,7 +42,7 @@ Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2
 
 * Borrar els fitxers de log InnoDB del directori de dades de mysql ***/var/lib/mysql***  
 
-***rm -rf mysql-bin.***  
+***rm -rf mysql-bin.****  
 
 <br>
 
