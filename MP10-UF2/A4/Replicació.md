@@ -70,7 +70,7 @@ Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2
 
 * Mostrar el contingut del fitxer ***ienriquezrep.000001***  
 
-***mysqlbinlog ienriquezrep.000001***
+***mysqlbinlog -v ienriquezrep.000001***
 
 ![mysqlbinlog](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura5.JPG)  
 
