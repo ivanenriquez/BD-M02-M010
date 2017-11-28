@@ -44,7 +44,7 @@
 ![ROOT_PASSWORD](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/root_password.PNG)  
   
 * **Un cop dins de mysql, cambiar la contrasenya per defecte de l'usuari root per una que compleixi els requisits de complexitat**  
-*ALTER USER 'root'@'localhost' IDENTIFIED BY 'Contrasenya509*';*  
+ ALTER USER 'root'@'localhost' IDENTIFIED BY 'Contrasenya509*';   
 
 ![CONTRASENYA_ROOT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A1/imatges/canviar%20la%20contra%20per%20defecte.JPG)  
 
