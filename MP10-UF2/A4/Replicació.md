@@ -260,10 +260,43 @@ Aturar els servidors
 
 * Editar el fitxer de configuració de mysql ***/etc/percona-server.conf.d/configuracio.cnf*** i ha de contenir les següents línies  
 
-![CONFIGURACIO.CNF_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/configuracio_mysql.JPG)  
+![CONFIGURACIO.CNF_SLAVE](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/configuracio_mysql.JPG)  
 
 <br>
 
+
+* Executar la següent comanda a la màquina slave per connectar-la a la màquina master  
+
+![CHANGE_MASTER_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/change_master.JPG)  
+
+<br>
+
+
+* Comprovar que el slave està actiu i connectat correctament al master per realitzar la replicació  
+
+![SHOW_SLAVE_STATUS_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/show_slave_Status.JPG)  
+
+<br>
+
+
+* Comprovar que la replicació s'efectua correctament  
+
+***MASTER***  
+
+Realitzar una instrucció DML en el servidor master  
+
+![INSERT_MASTER_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/insert%20.PNG)  
+
+<br>
+
+
+***SLAVE***  
+
+* Comprovar que les dades introduïdes des del master s'han replicat correctament  
+
+![SELECT_ACTOR_SLAVE_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/select%20_%20from%20actor.JPG)  
+
+![MYSQLD_LOG_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/mysqld_log.PNG)  
 
 <br>
 <br>
