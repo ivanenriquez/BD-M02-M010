@@ -260,7 +260,7 @@ Aturar els servidors
 
 * Editar el fitxer de configuració de mysql ***/etc/percona-server.conf.d/configuracio.cnf*** i ha de contenir les següents línies  
 
-![CONFIGURACIO.CNF_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Configuracio%20final%20master.PNG)  
+![CONFIGURACIO.CNF_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/configuracio_mysql.JPG)  
 
 <br>
 
