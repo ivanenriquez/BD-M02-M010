@@ -21,7 +21,7 @@ Verificar que el paràmetre ***server_id*** està activat amb un valor numèric
 Canviar el paràmetre ***innodb_log_buffer*** a ***10M***  
 Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2  
 
-![CONFIGURACIO_MYSQL](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura2.JPG)  
+![CONFIGURACIO_MYSQL_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura2.JPG)  
 
 <br>
 
@@ -102,7 +102,7 @@ SLAVE: 192.168.59.3
 
 * Editar el fitxer ***master_backup.sql*** i buscar la línia ***--CHANGE MASTER TO*** amb els valors ***MASTER_LOG_FILE*** i ***MASTER_LOG_POS***  
 
-![MASTER_BACKUP.SQL](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura8.JPG)  
+![MASTER_BACKUP.SQL](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/master_backup.JPG)  
 
 <br>
 
@@ -111,6 +111,23 @@ SLAVE: 192.168.59.3
 * Parar el servei  
 
 ***systemctl stop mysql***  
+
+<br>
+
+
+* Editar el fitxer de configuració ***/etc/percona-server.conf.d/configuracio_mysql.cnf***  
+
+Assignar un valor numèric al paràmetre ***server_id*** diferent del master. En aquest cas el master té assignat el valor ***1*** i el slave el valor ***2***  
+
+![CONFIGURACIO_MYSQL_SLAVE](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Mysql%20Conf%20Slave.PNG)  
+
+<br>
+
+
+* Arrencar el servei  
+
+
+***systemctl start mysql***  
 
 <br>
 <br>
