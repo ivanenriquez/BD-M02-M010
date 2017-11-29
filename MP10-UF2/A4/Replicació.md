@@ -302,3 +302,48 @@ Realitzar una instrucció DML en el servidor master
 <br>
 <br>
 <br>
+
+
+### PREGUNTES BINLOG I GTID  
+
+* Si iniciem una transacció en el master a on hi ha una sèrie d’operacions DML (INSERT, UPDATE o DELETE) . Aquestes es guarden en el binlog?  
+
+Binlog: Sí.  
+GTID: Sí.  
+
+<br>
+
+
+* Comprova mitjançant SHOW SLAVE STATUS, quins valors et dóna?
+
+BINLOG:  
+
+![SHOW_SLAVE_STATUS_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Show%20Status%20Slave.PNG)  
+
+
+GTID:
+
+![SHOW_SLAVE_STATUS_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/show_slave_Status.JPG)  
+
+<br>
+
+
+* Quin significat té l’opció MASTER_CONNECT_RETRY en la comanda CHANGE MASTER TO ?  
+
+Són els intents de connexió en cas de fallar aquesta.  
+
+<br>
+
+
+* Què fa la comanda RESET MASTER en el cas de no utilitzar GTID i utilitzar-lo?  
+
+***Sense GTID:*** elimina els binary log del fitxer index.  
+***Amb  GTID:*** Esborra els valors de la variable de sistema gtid_purged(identificador del conjunt de transaccions que s’han purgat del registre binariI) i el valor de la variable global gtid_executed (identificador de transaccions executades en el servidor).  
+
+<br>
+
+
+* Mira’t alguna de les taules (SHOW TABLES LIKE 'repl%') del PERFORMANCE_SCHEMA;  
+
+![PERFORMANCE_SCHEMA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/performance_Schema.JPG)  
+
