@@ -343,7 +343,7 @@ Són els intents de connexió en cas de fallar aquesta.
 <br>
 
 
-* Mira’t alguna de les taules (***SHOW TABLES LIKE 'repl%'***) del PERFORMANCE_SCHEMA;  
+* Mira’t alguna de les taules ***(SHOW TABLES LIKE 'repl%')*** del PERFORMANCE_SCHEMA;  
 
 ![PERFORMANCE_SCHEMA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/performance_Schema.JPG)  
 
