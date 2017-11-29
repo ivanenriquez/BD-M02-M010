@@ -136,7 +136,7 @@ Assignar un valor numèric al paràmetre ***server_id*** diferent del master. En
 
 * Crear l'usuari ***slave*** amb la ip de la màquina slave  
 
-![CREATE_USER_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura10.JPG)  
+![CREATE_USER_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/crear_usuari_binlog.JPG)  
 
 <br>
 
