@@ -68,7 +68,7 @@ Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2
 ![mysqlbinlog](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura5.JPG)  
 
 
-* Fer un ***FLUSH LOGS***  
+* Executar la comanda ***FLUSH LOGS***  
 
 ![FLUSH_LOGS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura6.JPG)  
 
