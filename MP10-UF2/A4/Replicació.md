@@ -338,7 +338,7 @@ Són els intents de connexió en cas de fallar aquesta.
 * Què fa la comanda RESET MASTER en el cas de no utilitzar GTID i utilitzar-lo?  
 
 ***Sense GTID:*** elimina els binary log del fitxer index.  
-***Amb  GTID:*** Esborra els valors de la variable de sistema gtid_purged(identificador del conjunt de transaccions que s’han purgat del registre binariI) i el valor de la variable global gtid_executed (identificador de transaccions executades en el servidor).  
+***Amb  GTID:*** Esborra els valors de la variable de sistema ***gtid_purged***(identificador del conjunt de transaccions que s’han purgat del registre binariI) i el valor de la variable global ***gtid_executed***(identificador de transaccions executades en el servidor).  
 
 <br>
 
