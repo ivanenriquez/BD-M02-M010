@@ -106,6 +106,7 @@ SLAVE: 192.168.59.3
 
 <br>
 
+
 ***SLAVE***  
 
 * Parar el servei  
@@ -126,8 +127,67 @@ Assignar un valor numèric al paràmetre ***server_id*** diferent del master. En
 
 * Arrencar el servei  
 
-
 ***systemctl start mysql***  
+
+<br>
+
+
+***MASTER***  
+
+* Crear l'usuari ***slave*** amb la ip de la màquina slave  
+
+![CREATE_USER_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura10.JPG)  
+
+<br>
+
+
+* Assignar-li el permís de replicació  
+
+![GRANT_SLAVE_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/permisos_usuari.JPG)  
+
+<br>
+
+
+* Executar la següent comanda a la màquina slave per connectar-la a la màquina master amb les dades que trobem a l'arxiu ***/tmp/master_backup.sql*** de backup que hem realitzat anteriorment. En aquest cas els valors dels paràmetres ***MASTER_LOG_FILE*** i ***MASTER_LOG_POS*** són ***ienriquezrep.000008*** i ***154***  
+
+![CONNECT_SLAVE_TO_MASTER_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Slave%20Connect.PNG)  
+
+<br>
+
+
+* Iniciar la replicació executant la següent comanda  
+
+***START SLAVE***  
+
+<br>
+
+
+* Comprovar que el slave està actiu i connectat correctament al master per realitzar la replicació  
+
+![SHOW_SLAVE_STATUS_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Show%20Status%20Slave.PNG)  
+
+<br>
+
+
+* Comprovar que la replicació s'efectua correctament  
+
+***MASTER***  
+
+Realitzar una instrucció DML en el servidor master  
+
+![INSERT_MASTER_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Captura13.JPG)  
+
+<br>
+
+
+***SLAVE***  
+
+* Comprovar que les dades introduïdes des del master s'han replicat correctament  
+
+![SELECT_ACTOR_SLAVE_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Select%20Actors%20Slave.PNG)  
+
+![MYSQLD_LOG_BINLOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/mysqld_log.PNG)  
+
 
 <br>
 <br>
