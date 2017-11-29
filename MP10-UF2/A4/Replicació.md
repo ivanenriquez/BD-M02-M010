@@ -198,6 +198,72 @@ Realitzar una instrucció DML en el servidor master
 
 ### REPLICACIÓ VIA GTID
 
+* Executar les següents comandes tant en el servidor master com en el slave  
+
+Fer que els servidors siguin de només lectura  
+
+![READ_ONLY_ON](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/lectura.JPG)  
+
+
+Aturar els servidors  
+
+![MYSQLADMIN](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/aturar_servidors.JPG)  
+
+<br>
+
+
+***MASTER***  
+
+* Comprovar que el pàrametre ***server_id*** està configurat en el fitxer de configuració  
+
+![SERVER_ID_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/GITD%20SERVERI%20ID.PNG)  
+
+<br>
+
+
+* Comprovar que el servidor té un identificador ***(uuid)*** editant el fitxer de configuració ***/var/lib/mysql/auto.cnf***  
+
+![AUTO.CNF_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/GITD%20UUID%20SERVER.PNG)  
+
+<br>  
+
+
+* Editar el fitxer de configuració de mysql ***/etc/percona-server.conf.d/configuracio.cnf*** i ha de contenir les següents línies  
+
+![CONFIGURACIO.CNF_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Configuracio%20final%20master.PNG)  
+
+<br>
+
+
+* Crear l'usuari ***slave*** amb la ip de la màquina slave  
+
+![CREATE_USER_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/GITD%20CREAR%20USUARI.PNG)  
+
+<br>
+
+
+***SLAVE***  
+
+* Comprovar que el pàrametre ***server_id*** està configurat en el fitxer de configuració  
+
+![SERVER_ID_SLAVE](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/server-id.JPG)  
+
+<br>
+
+
+* Comprovar que el servidor té un identificador ***(uuid)*** editant el fitxer de configuració ***/var/lib/mysql/auto.cnf***  
+
+![AUTO.CNF_SLAVE](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/uuid.JPG)  
+
+<br>  
+
+
+* Editar el fitxer de configuració de mysql ***/etc/percona-server.conf.d/configuracio.cnf*** i ha de contenir les següents línies  
+
+![CONFIGURACIO.CNF_MASTER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/Configuracio%20final%20master.PNG)  
+
+<br>
+
 
 <br>
 <br>
