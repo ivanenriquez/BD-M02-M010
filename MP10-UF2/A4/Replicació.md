@@ -285,7 +285,7 @@ Aturar els servidors
 
 Realitzar una instrucció DML en el servidor master  
 
-![INSERT_MASTER_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/insert%20.PNG)  
+![INSERT_MASTER_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/insert.PNG)  
 
 <br>
 
@@ -294,7 +294,7 @@ Realitzar una instrucció DML en el servidor master
 
 * Comprovar que les dades introduïdes des del master s'han replicat correctament  
 
-![SELECT_ACTOR_SLAVE_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/select%20_%20from%20actor.JPG)  
+![SELECT_ACTOR_SLAVE_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/select.JPG)  
 
 ![MYSQLD_LOG_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/log.JPG)  
 
