@@ -296,7 +296,7 @@ Realitzar una instrucció DML en el servidor master
 
 ![SELECT_ACTOR_SLAVE_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/select%20_%20from%20actor.JPG)  
 
-![MYSQLD_LOG_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/mysqld-log-gtid.JPG)  
+![MYSQLD_LOG_GTID](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A4/Imatges/log.JPG)  
 
 <br>
 <br>
