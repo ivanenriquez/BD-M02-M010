@@ -198,6 +198,13 @@ Realitzar una instrucció DML en el servidor master
 
 ### REPLICACIÓ VIA GTID
 
+* IP de cadascuna de les màquines(master, slave)  
+MASTER: 10.92.254.157  
+SLAVE: 10.92.254.137  
+
+<br>
+
+
 * Executar les següents comandes tant en el servidor master com en el slave  
 
 Fer que els servidors siguin de només lectura  
