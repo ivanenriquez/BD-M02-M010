@@ -87,8 +87,8 @@ Canviar/afegir el paràmetre ***innodb_log_files_in_group*** a 2
 
 * IP de cadascuna de les màquines(master, slave)  
 
-MASTER: 192.168.59.2  
-SLAVE: 192.168.59.3  
+MASTER: 10.92.254.131  
+SLAVE: 10.92.254.130  
 
 <br>
 
