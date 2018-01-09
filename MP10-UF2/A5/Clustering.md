@@ -55,11 +55,17 @@ Editar el fitxer de configuració ***/etc/selinux/config*** i canviar el paràme
 * Parar el servei:
 ***sudo systemctl stop mysql***  
 
+<br>
+
+
 * CONFIGURACIÓ NODES:  
 Percona1: 10.92.255.109  
 Percona2: 10.92.255.108  
 Percona3: 10.92.255.78  
 Percona4: 10.92.255.79  
+
+<br>
+
 
 * Crear un fitxer de configuració a /etc/percona-xtradb-cluster.conf.d i configurar-lo per cada node  
 
@@ -69,4 +75,6 @@ wsrep_node_name=nom_maquina
 wsrep_node_address=ip_maquina  
 wsrep_sst_method=metode_per_fer_la_replica  
 wsrep_sst_auth”usuari:contrasenya” per_fer_la_replica***  
+
+<br>
 
