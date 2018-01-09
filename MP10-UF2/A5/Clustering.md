@@ -39,6 +39,7 @@
 Editar el fitxer de configuració ***/etc/selinux/config*** i canviar el paràmetre ***SELINUX=enforce*** per ***SELINUX=disabled***  
 
 * Iniciar el servei  
+
 ***sudo systemctl start mysql***  
 
 <br>
@@ -48,6 +49,7 @@ Editar el fitxer de configuració ***/etc/selinux/config*** i canviar el paràme
 ***sudo grep ’temporary password’ /var/log/mysqld.log***  
 
 * Accedir a mysql:
+
 ***mysql -u root –p***  
 
 ***ALTER USER 'root'@'localhost' IDENTIFIED BY 'patata';***  
@@ -76,5 +78,36 @@ wsrep_node_address=ip_maquina
 wsrep_sst_method=metode_per_fer_la_replica  
 wsrep_sst_auth”usuari:contrasenya” per_fer_la_replica***  
 
+![wsrep.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura1.JPG)  
+
 <br>
 
+
+* Iniciar el node1 amb el bootstrap:  
+
+***systemctl start mysql@bootstrap.service***  
+
+<br>
+
+
+* Crear un usuari per al node principal per realizar la replicació en els altres.
+
+***CREATE USER ’sstuser’@’localhost’ IDENTIFIED BY ’P@ssw0rd’;  
+GRANT RELOAD, LOCK TABLES, PROCESS, REPLICATION CLIENT ON *.* TO ’sstuser’@’localhost’;  
+FLUSH PRIVILEGES;***  
+
+<br>
+
+
+* Afegir la resta de nodes al cluster:  
+
+***systemctl start mysql***  
+
+<br>
+
+
+* Comprobar que el cluster està funcionant:  
+
+***SHOW STATUS LIKE ’wsrep%’;***
+
+![SHOW_STATUS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura2.JPG)  
