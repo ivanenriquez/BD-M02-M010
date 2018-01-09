@@ -111,3 +111,9 @@ FLUSH PRIVILEGES;***
 ***SHOW STATUS LIKE ’wsrep%’;***
 
 ![SHOW_STATUS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura2.JPG)  
+
+<br>
+
+
+**BOOTSTRAPPING**  
+El concepte bootstrapping vol dir tenir un node principal dins un cluster que s’arrencarà el primer del cluster i el qual conté totes les dades i les quals es repliquen a tots els altres nodes del cluster.  
