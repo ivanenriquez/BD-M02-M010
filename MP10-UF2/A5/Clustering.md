@@ -137,8 +137,8 @@ El concepte Split-brain succeeix quan un o més nodes fallen en un clúster, el 
 
 Exemple:  
 
-•	Suposem que hi ha 5 nodes A, B, C, D i E que formen un clúster, X.
-•	Ara falla un node (per exemple, E).
-•	Es realitza la reforma del clúster. En realitat, els nodes restants A, B, C i D haurien de formar el clúster X.
-•	Però es pot produir una divisió de la situació cerebral que condueix a la formació de dos grups X1 (que contenen A i B) i X2 (que contenen C i D).
-•	Els clústers X1 i X2 creuen que són l'únic clúster actiu. Ambdós grups comencen a accedir a les dades o al disc, la qual cosa provoca la corrupció de dades.
+•	Suposem que hi ha 5 nodes A, B, C, D i E que formen un clúster, X.  
+•	Ara falla un node (per exemple, E).  
+•	Es realitza la reforma del clúster. En realitat, els nodes restants A, B, C i D haurien de formar el clúster X.  
+•	Però es pot produir una divisió de la situació cerebral que condueix a la formació de dos grups X1 (que contenen A i B) i X2 (que contenen C i D).  
+•	Els clústers X1 i X2 creuen que són l'únic clúster actiu. Ambdós grups comencen a accedir a les dades o al disc, la qual cosa provoca la corrupció de dades.  
