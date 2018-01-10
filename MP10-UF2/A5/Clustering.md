@@ -48,11 +48,17 @@ Editar el fitxer de configuració ***/etc/selinux/config*** i canviar el paràme
 * Veure la contrasenya temporal assignada a l’usuari root per accedir per primera vegada a mysql  
 ***sudo grep ’temporary password’ /var/log/mysqld.log***  
 
+<br>
+
+
 * Accedir a mysql:
 
 ***mysql -u root –p***  
 
 ***ALTER USER 'root'@'localhost' IDENTIFIED BY 'patata';***  
+
+<br>
+
 
 * Parar el servei:
 ***sudo systemctl stop mysql***  
@@ -61,10 +67,11 @@ Editar el fitxer de configuració ***/etc/selinux/config*** i canviar el paràme
 
 
 * CONFIGURACIÓ NODES:  
-Percona1: 10.92.255.109  
-Percona2: 10.92.255.108  
-Percona3: 10.92.255.78  
-Percona4: 10.92.255.79  
+Node1: 10.92.255.78  
+Node2: 10.92.255.79  
+Node3: 10.92.255.132  
+Node4: 10.92.255.127  
+
 
 <br>
 
