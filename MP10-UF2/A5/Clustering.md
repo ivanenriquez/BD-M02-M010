@@ -118,7 +118,7 @@ FLUSH PRIVILEGES;***
 
 * Comprobar que el cluster està funcionant:  
 
-***SHOW STATUS LIKE ’wsrep%’;***
+***SHOW STATUS LIKE ’wsrep%’;***  
 
 ![SHOW_STATUS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura2.JPG)  
 
