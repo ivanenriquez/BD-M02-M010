@@ -38,6 +38,9 @@
 
 Editar el fitxer de configuració ***/etc/selinux/config*** i canviar el paràmetre ***SELINUX=enforce*** per ***SELINUX=disabled***  
 
+<br>
+
+
 * Iniciar el servei  
 
 ***sudo systemctl start mysql***  
