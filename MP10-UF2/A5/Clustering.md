@@ -88,7 +88,7 @@ wsrep_node_address=ip_maquina
 wsrep_sst_method=metode_per_fer_la_replica  
 wsrep_sst_auth”usuari:contrasenya” per_fer_la_replica***  
 
-![wsrep.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura1.JPG)  
+![wsrep.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura.JPG)  
 
 <br>
 
