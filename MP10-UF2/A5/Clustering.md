@@ -127,3 +127,18 @@ FLUSH PRIVILEGES;***
 
 **BOOTSTRAPPING**  
 El concepte bootstrapping vol dir tenir un node principal dins un cluster que s’arrencarà el primer del cluster i el qual conté totes les dades i les quals es repliquen a tots els altres nodes del cluster.  
+
+<br>
+
+
+**SPLIT-BRAIN**  
+
+El concepte Split-brain succeeix quan un o més nodes fallen en un clúster, el clúster es reforma amb els nodes disponibles. Durant aquesta reforma, en lloc de formar un únic clúster, es poden formar múltiples fragments del clúster amb un nombre igual de nodes. Cada fragment de clúster suposa que és l'únic clúster actiu i que altres clústers estan morts i comença a accedir a les dades o al disc. Atès que més d'un clúster està accedint al disc, les dades es corrompen.  
+
+Exemple:  
+
+•	Suposem que hi ha 5 nodes A, B, C, D i E que formen un clúster, X.
+•	Ara falla un node (per exemple, E).
+•	Es realitza la reforma del clúster. En realitat, els nodes restants A, B, C i D haurien de formar el clúster X.
+•	Però es pot produir una divisió de la situació cerebral que condueix a la formació de dos grups X1 (que contenen A i B) i X2 (que contenen C i D).
+•	Els clústers X1 i X2 creuen que són l'únic clúster actiu. Ambdós grups comencen a accedir a les dades o al disc, la qual cosa provoca la corrupció de dades.
