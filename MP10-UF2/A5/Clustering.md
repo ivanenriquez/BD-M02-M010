@@ -79,7 +79,7 @@ Node4: 10.92.255.127
 <br>
 
 
-* Crear un fitxer de configuració a /etc/percona-xtradb-cluster.conf.d i configurar-lo per cada node  
+* Crear un fitxer de configuració a ***/etc/percona-xtradb-cluster.conf.d*** i configurar-lo per cada node  
 
 ***wsrep_cluster_name=nom_cluster  
 wsrep_cluster_address=gcomm://adreces_servidors_cluster_separades_per_comes  
