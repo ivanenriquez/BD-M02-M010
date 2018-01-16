@@ -189,7 +189,15 @@ Exemple:
 ***LOAD MYSQL VARIABLES TO RUNTIME;***  
 ***SAVE MYSQL VARIABLES TO DISK;***  
 
+<br>
 
+* Comprovar que ProxySQL es pot connectar als nodes del clúster  
+
+![LOG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/monitoring_log_is_enabled.JPG)  
 
 <br>
 
+
+* Habilitar la monitorització dels nodes carregant la configuració en temps d'execució  
+
+LOAD MYSQL SERVERS TO RUNTIME;
