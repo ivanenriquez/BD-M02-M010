@@ -88,7 +88,7 @@ wsrep_node_address=ip_maquina
 wsrep_sst_method=metode_per_fer_la_replica  
 wsrep_sst_auth”usuari:contrasenya” per_fer_la_replica***  
 
-![wsrep.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura.JPG)  
+![wsrep.cnf](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/wsrepconf.JPG)  
 
 <br>
 
@@ -120,7 +120,7 @@ FLUSH PRIVILEGES;***
 
 ***SHOW STATUS LIKE ’wsrep%’;***  
 
-![SHOW_STATUS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura2.JPG)  
+![SHOW_STATUS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/Captura3.JPG)  
 
 <br>
 
