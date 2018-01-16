@@ -133,7 +133,7 @@ El concepte bootstrapping vol dir tenir un node principal dins un cluster que s�
 
 **SPLIT-BRAIN**  
 
-El concepte Split-brain succeeix quan un o més nodes fallen en un clúster, el clúster es reforma amb els nodes disponibles. Durant aquesta reforma, en lloc de formar un únic clúster, es poden formar múltiples fragments del clúster amb un nombre igual de nodes. Cada fragment de clúster suposa que és l'únic clúster actiu i que altres clústers estan morts i comença a accedir a les dades o al disc. Atès que més d'un clúster està accedint al disc, les dades es corrompen.  
+El concepte Split-brain succeeix quan un o més nodes fallen en un clúster i els subconjunts de nodes no poden comunicar-se entre si. Això pot fer que tots dos subconjunts de nodes intentin ser propietaris de la càrrega de treball i escriure en el mateix disc, la qual cosa pot ocasionar nombrosos problemes.
 
 Exemple:  
 
