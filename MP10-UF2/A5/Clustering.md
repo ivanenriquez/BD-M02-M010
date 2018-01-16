@@ -1,10 +1,6 @@
 ## CLUSTERING  
 
 
-
-**INSTAL·LACIÓ**  
-
-
 * Instal·lar el repositori:  
 
 ***yum install http://www.percona.com/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm***  
@@ -142,3 +138,49 @@ Exemple:
 •	Es realitza la reforma del clúster. En realitat, els nodes restants A, B, C i D haurien de formar el clúster X.  
 •	Però es pot produir una divisió de la situació cerebral que condueix a la formació de dos grups X1 (que contenen A i B) i X2 (que contenen C i D).  
 •	Els clústers X1 i X2 creuen que són l'únic clúster actiu. Ambdós grups comencen a accedir a les dades o al disc, la qual cosa provoca la corrupció de dades.  
+
+<br>
+<br>
+<br>
+<br>
+
+## BALANCEJADOR/PROXY    
+
+
+
+* Instal·lar el paquet en una màquina fora del clúster:  
+
+***sudo yum install proxysql***  
+
+<br>
+
+
+* Accedir a la interfície d'adminsitració de ProxySQL  
+
+***mysql -u admin -padmin -h 127.0.0.1 -P 6032***  
+
+<br>
+
+
+* Afegir els nodes del clúster dins la base de dades del ProxySQL  
+
+![INSERT_SELECT](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/AFEGIR_NODES_cLUSTER_BD.JPG)  
+
+<br>
+
+
+* Crear un usuari per monitoritzar els nodes en qualsevol node del clúster  
+
+![USER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/crear_usuari.JPG)  
+
+<br>
+
+
+* Configurar l'usuari per monitoritzar els nodes en la màquina on tenim el ProxySQL  
+
+![UPDATE_USER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/usuari_in_proxy_sql.JPG)  
+![UPDATE_PASSWORD](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/contrasenya_in_proxysql.JPG)  
+
+
+
+<br>
