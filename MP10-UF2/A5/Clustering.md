@@ -181,6 +181,15 @@ Exemple:
 ![UPDATE_USER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/usuari_in_proxy_sql.JPG)  
 ![UPDATE_PASSWORD](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/contrasenya_in_proxysql.JPG)  
 
+<br>
+
+
+* Carregar la configuració en temps d'execució i a disc  
+
+***LOAD MYSQL VARIABLES TO RUNTIME;***  
+***SAVE MYSQL VARIABLES TO DISK;***  
+
 
 
 <br>
+
