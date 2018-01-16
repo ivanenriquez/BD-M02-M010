@@ -200,4 +200,33 @@ Exemple:
 
 * Habilitar la monitorització dels nodes carregant la configuració en temps d'execució  
 
-LOAD MYSQL SERVERS TO RUNTIME;
+***LOAD MYSQL SERVERS TO RUNTIME;***  
+
+<br>
+
+
+* Crear usuari per administrar les connexions  
+
+![INSERT_USER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/PROXY_CLIENT_USER.JPG)  
+
+<br>
+
+
+* Carregar la configuració en temps d'execució i a disc  
+
+***LOAD MYSQL USERS TO RUNTIME;***  
+***SAVE MYSQL USERS TO DISK;***  
+
+<br>
+
+
+* Per confirmar que l'usuari s'ha configurat correctament iniciem sessió amb aquest  
+
+![sbuser_localhost](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/access%20sbuser.JPG)  
+
+<br>
+
+
+* Per proporcionar accés de lectura/escriptura al clúster, afegim l'usuari a un dels nodes del clúster  
+
+![sbuser_node_cluster](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/create_user_sbuser.JPG)  
