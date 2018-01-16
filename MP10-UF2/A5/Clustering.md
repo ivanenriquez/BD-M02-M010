@@ -72,8 +72,8 @@ Editar el fitxer de configuració ***/etc/selinux/config*** i canviar el paràme
 * CONFIGURACIÓ NODES:  
 Node1: 10.92.255.78  
 Node2: 10.92.255.79  
-Node3: 10.92.255.132  
-Node4: 10.92.255.127  
+Node3: 10.92.255.166  
+Node4: 10.92.255.167  
 
 
 <br>
