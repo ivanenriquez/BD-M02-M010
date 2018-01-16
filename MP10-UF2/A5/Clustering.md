@@ -230,3 +230,33 @@ Exemple:
 * Per proporcionar accés de lectura/escriptura al clúster, afegim l'usuari a un dels nodes del clúster  
 
 ![sbuser_node_cluster](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/create_user_sbuser.JPG)  
+
+<br>
+
+
+* ProxySQL no pot detectar un node que no estigui en estat sincronitzat. Per controlar l'estat dels nodes, utilitzem l'script proxyql_galera_checker ubicat a  ***/usr/bin/proxysql_galera_checker***. Carregar l'script al sheduler  
+
+![INSERT_SCHEDULER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/shceduler.JPG)  
+
+<br>
+
+
+* Carregar els canvis al scheduler en temps d'execució  
+
+***LOAD SCHEDULER TO RUNTIME;***  
+
+<br>
+
+
+* Comprovar que l'script s'ha carregat correctament  
+
+![SELECT_SCHEDULER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/select_Sheduler.JPG)  
+
+<br>
+
+
+* Comprovar l'estat dels nodes  
+
+![SELECT_STATUS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/node_Status.JPG)  
+
+<br>
