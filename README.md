@@ -18,4 +18,4 @@
 
 
 ### MP02-UF3
-* [A1-OPTMITZACIÓ]()  
+* [A1-OPTMITZACIÓ](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/Optimització.md)  
