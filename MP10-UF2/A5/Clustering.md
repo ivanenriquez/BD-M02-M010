@@ -255,6 +255,11 @@ Exemple:
 <br>
 
 
+* Comprovació del clúster amb sysbench  
+
+***yum install sysbench***  
+
+
 * Comprovar l'estat dels nodes  
 
 ![SELECT_STATUS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/node_Status.JPG)  
