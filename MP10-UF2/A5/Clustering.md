@@ -255,11 +255,6 @@ Exemple:
 <br>
 
 
-* Comprovació del clúster amb sysbench. Instal·lar l'eina ***sysbench*** a la màquina proxysql  
-
-***yum install sysbench***  
-
-
 * Comprovar l'estat dels nodes  
 
 ![SELECT_STATUS](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/node_Status.JPG)  
@@ -267,5 +262,18 @@ Exemple:
 <br>
 
 
+* Comprovació del clúster amb sysbench. Instal·lar l'eina ***sysbench*** a la màquina proxysql  
+
+***yum install sysbench***  
+
+<br>
 
 
+* Crear la base de dades que s'utilitzarà pel test en un dels nodes del clúster  
+
+***CREATE DATABASE sbtest;***
+
+<br>
+
+
+* Omplir la taula amb la informació del benchmark a la màquina proxysql  
