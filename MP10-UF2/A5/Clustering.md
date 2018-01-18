@@ -255,7 +255,7 @@ Exemple:
 <br>
 
 
-* Comprovació del clúster amb sysbench  
+* Comprovació del clúster amb sysbench. Instal·lar l'eina ***sysbench*** a la màquina proxysql  
 
 ***yum install sysbench***  
 
