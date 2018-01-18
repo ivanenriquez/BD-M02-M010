@@ -293,3 +293,38 @@ Exemple:
 * Comprovar que funciona el benchmark  
 
 ![BENCHMARK](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/sysbench4.JPG)  
+
+<br>
+
+
+* Comprovar que ProxySQL detecta automàticament si un node no està disponible o no s'ha sincronitzat amb el clúster  
+
+![FAILOVER1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/failover1.JPG)  
+
+<br>
+
+
+* Per comprovar que funciona la detecció de problemes i el mecanisme d'error parem el servei d'un dels nodes  
+
+***systemctl stop mysql*** 
+
+<br>
+
+
+* ProxySQL detecta que el node ha caigut  
+
+![FAILOVER2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/failover2.JPG)  
+
+<br>
+
+
+* Iniciem el servei en el node el qual està parat  
+
+***systemctl start mysql***
+
+<br>
+
+
+*  Tornem a comprovar l'estat dels nodes i veiem que el node torna a estar actiu  
+
+![FAILOVER3]()  
