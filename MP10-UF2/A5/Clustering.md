@@ -155,7 +155,7 @@ Exemple:
 <br>
 
 
-* Accedir a la interfície d'adminsitració de ProxySQL en el ProxySQL  
+* Accedir a la interfície d'administració de ProxySQL en el ProxySQL  
 
 ***mysql -u admin -padmin -h 127.0.0.1 -P 6032***  
 
