@@ -153,6 +153,18 @@
 
 
 <br>
+<br>
+<br>
+<br>
+
+## QUERY CACHÉ   
 
 
 
+<br>
+<br>
+<br>
+<br>
+
+
+## BENCHMARKING
