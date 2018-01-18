@@ -277,3 +277,19 @@ Exemple:
 
 
 * Omplir la taula amb la informació del benchmark a la màquina proxysql  
+
+![SYSBENCH1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/sysbench.JPG)  
+
+<br>
+
+
+* Activar el benchmark a la màquina proxysql  
+
+![SYSBENCH2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/sysbench2.JPG)  
+
+<br>
+
+
+* Comprovar que funciona el benchmark  
+
+![BENCHMARK](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/sysbench4.JPG)  
