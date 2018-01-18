@@ -327,4 +327,4 @@ Exemple:
 
 *  Tornem a comprovar l'estat dels nodes i veiem que el node torna a estar actiu  
 
-![FAILOVER3]()  
+![FAILOVER3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/failover3.JPG)  
