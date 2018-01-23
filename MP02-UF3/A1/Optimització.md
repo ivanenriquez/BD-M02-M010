@@ -2,6 +2,10 @@
 
 1. Obtenir el nom i l’adreça dels hotels de 4 estrelles.  
 
+SELECT nom
+      ,adreca
+  FROM hotels
+WHERE categoria = 4;
 
 
 <br>
