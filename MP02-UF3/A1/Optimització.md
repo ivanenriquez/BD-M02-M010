@@ -4,7 +4,7 @@
 
 ***SELECT nom  
          ,adreca  
-  FROM hotels  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  FROM hotels  
 WHERE categoria = 4;***  
 
 <br>
