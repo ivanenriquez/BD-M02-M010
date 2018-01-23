@@ -2,7 +2,7 @@
 
 1. Obtenir el nom i l’adreça dels hotels de 4 estrelles.  
 
-<span style="color:#4033FF">SELECT nom  
+<span style="color:blue">SELECT nom  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ,adreca  
 &nbsp;&nbsp;&nbsp; FROM hotels  
   WHERE categoria = 4;***</span> 
