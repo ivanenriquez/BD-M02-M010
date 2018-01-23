@@ -54,21 +54,35 @@ WHERE MONTH(data_naix) = 03;***
 
 6. Quantitat d’hotels de 4 estrelles de la població de Barcelona.  
 
-
+SELECT COUNT(h.hotel_id)
+&nbsp;&nbsp;&nbsp;  FROM hotels h 
+&nbsp;&nbsp;&nbsp;  INNER JOIN poblacions AS p ON p.poblacio_id = h.poblacio_id
+WHERE h.categoria = 4 and p.nom = 'Barcelona';
 
 <br>
 
 
 7. De l’any 2015 volem obtenir els seu histograma de reserves. És a dir volem saber el número de reserves de cadascun dels mesos. Una reserva pertany a un mes si la alguna nit d’aquella reserva cau a dins de l’any 2015.  
 
-
+***SELECT COUNT(reserva_id) AS Total_Reserves  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ,MONTH(data_inici) AS Mes      
+&nbsp;&nbsp;&nbsp;  FROM reserves   
+WHERE YEAR(data_inici)= 2015  
+GROUP BY MONTH(data_inici);***  
 
 <br>
 
 
 8. El nom dels hotels que tenen com a mínim una habitació lliure durant les dates ‘2015-05-01’ i ‘2015-05-17’.  
 
-
+***SELECT h.nom  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ,h.hotel_id  
+&nbsp;&nbsp;&nbsp;  FROM hotels h  
+&nbsp;&nbsp;&nbsp;  INNER JOIN habitacions hab ON hab.hotel_id = h.hotel_id  
+WHERE hab.hab_id NOT IN (SELECT DISTINCT r.hab_id  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  FROM reserves r  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE r.data_inici BETWEEN '2014-01-10' AND '2015-05-17')  
+GROUP BY h.hotel_id;***  
 
 <br>
 
