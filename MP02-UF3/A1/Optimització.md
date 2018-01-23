@@ -97,22 +97,48 @@ GROUP BY h.hotel_id;***
 
 10. Durant 2014 qui va realitzar més reserves? Els homes o les dones? Mostra el sexe i el número de reserves.  
 
-
+***SELECT c.sexe  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ,COUNT(r.reserva_id) AS 'TotalReserves'  
+&nbsp;&nbsp;&nbsp;  FROM reserves AS r  
+&nbsp;&nbsp;&nbsp;  INNER JOIN clients AS c ON c.client_id = r.client_id  
+WHERE YEAR(r.data_inici) = 2014  
+GROUP BY c.sexe;***  
 
 <br>
 
 
-
 11.	Quina és la mitjana de dies de reserva per l’hotel «HTOP Royal Star» de Blanes durant l’any 2016? (Una reserva pertany el 2016 si alguna nit cau en aquest any).  
 
-
+***SELECT AVG(DATEDIFF (r.data_fi,r.data_inici)) AS 'MitjanaReserves'  
+&nbsp;&nbsp;&nbsp;  FROM reserves AS r  
+&nbsp;&nbsp;&nbsp;  INNER JOIN clients AS c ON c.client_id = r.client_id  
+&nbsp;&nbsp;&nbsp;  INNER JOIN paisos AS p ON p.pais_id = c.pais_origen_id  
+&nbsp;&nbsp;&nbsp;  INNER JOIN habitacions hab ON hab.hab_id = r.hab_id  
+&nbsp;&nbsp;&nbsp;  INNER JOIN hotels h ON h.hotel_id = hab.hotel_id  
+WHERE h.nom = 'HTOP Royal Star' AND YEAR(r.data_inici)=2016;***  
 
 <br>
 
 
 12.	El nom, categoria, adreça i número d’habitacions de l’hotel amb més habitacions de la BD.  
 
-
+***SELECT h.nom  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ,h.categoria  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ,h.adreca  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ,COUNT(hab.hab_id)  
+&nbsp;&nbsp;&nbsp;  FROM hotels h  
+&nbsp;&nbsp;&nbsp;  INNER JOIN habitacions hab ON hab.hotel_id = h.hotel_id  
+GROUP BY h.hotel_id  
+HAVING COUNT(hab.hab_id) = ( SELECT MAX(TotalHabitacions) MaxTotalHabitacions  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                              FROM ( SELECT h.nom  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       ,h.categoria  
+                                   ,h.adreca                                  
+                                   ,COUNT(hab.hab_id) TotalHabitacions  
+                              FROM hotels h  
+                              INNER JOIN habitacions hab ON hab.hotel_id = h.hotel_id  
+                              GROUP BY h.hotel_id  
+                            ) H  
+                  );***  
 
 <br>
 
