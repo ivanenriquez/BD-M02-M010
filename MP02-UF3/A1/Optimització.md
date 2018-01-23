@@ -2,7 +2,7 @@
 
 1. Obtenir el nom i l’adreça dels hotels de 4 estrelles.  
 
-***SELECT &nbsp; nom  
+***SELECT nom  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ,adreca  
 &nbsp;&nbsp;&nbsp; FROM hotels  
 WHERE categoria = 4;***  
@@ -13,7 +13,7 @@ WHERE categoria = 4;***
 2. Obtenir el nom dels clients (Nom i cognom) que el seu cognom comenci per vocal (sense tenir en compte els accents).  
 
 ***SELECT CONCAT(nom,',',cognom1)  
-  FROM clients  
+&nbsp;&nbsp;&nbsp;  FROM clients  
 WHERE cognom1 like 'a%' OR cognom1 like 'e%' OR cognom1 like 'i%' OR cognom1 like 'o%' OR cognom1 like 'u%';***  
 
 <br>
@@ -22,10 +22,10 @@ WHERE cognom1 like 'a%' OR cognom1 like 'e%' OR cognom1 like 'i%' OR cognom1 lik
 3. Quina és la reserva_id que té més nits. Indica també la quantitat de nits.  
 
 ***SELECT reserva_id  
-         ,DATEDIFF (data_fi, data_inici) Nits  
-FROM reserves  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ,DATEDIFF (data_fi, data_inici) Nits  
+&nbsp;&nbsp;&nbsp; FROM reserves  
 WHERE DATEDIFF (data_fi, data_inici) = (SELECT MAX(DATEDIFF (data_fi, data_inici))  
-                                          FROM reserves)LIMIT 1;***  
+                                        &nbsp;&nbsp;&nbsp; FROM reserves)LIMIT 1;***  
 
 <br>
 
