@@ -145,7 +145,7 @@ HAVING COUNT(hab.hab_id) = ( SELECT MAX(TotalHabitacions) MaxTotalHabitacions
 
 13.	Rànquing de 5 països amb més reserves durant l’any 2016. Per cada país mostrar el nom del país i el número de reserves.  
 
-***SELECT p.pais_id
+***SELECT p.pais_id  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ,p.nom  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ,COUNT(r.reserva_id) AS 'NumeroReserves'  
 &nbsp;&nbsp;&nbsp;  FROM paisos AS p  
