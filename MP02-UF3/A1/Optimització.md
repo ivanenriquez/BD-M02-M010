@@ -2,52 +2,52 @@
 
 1. Obtenir el nom i l’adreça dels hotels de 4 estrelles.  
 
-***SELECT nom
-      ,adreca
-  FROM hotels
-WHERE categoria = 4;***
+***SELECT nom  
+         ,adreca  
+  FROM hotels  
+WHERE categoria = 4;***  
 
 <br>
 
 
 2. Obtenir el nom dels clients (Nom i cognom) que el seu cognom comenci per vocal (sense tenir en compte els accents).  
 
-***SELECT CONCAT(nom,',',cognom1)
-  FROM clients
-WHERE cognom1 like 'a%' OR cognom1 like 'e%' OR cognom1 like 'i%' OR cognom1 like 'o%' OR cognom1 like 'u%';***
+***SELECT CONCAT(nom,',',cognom1)  
+  FROM clients  
+WHERE cognom1 like 'a%' OR cognom1 like 'e%' OR cognom1 like 'i%' OR cognom1 like 'o%' OR cognom1 like 'u%';***  
 
 <br>
 
 
 3. Quina és la reserva_id que té més nits. Indica també la quantitat de nits.  
 
-***SELECT reserva_id
-      ,DATEDIFF (data_fi, data_inici) Nits
-FROM reserves
-WHERE DATEDIFF (data_fi, data_inici) = (SELECT MAX(DATEDIFF (data_fi, data_inici))
-                                          FROM reserves)LIMIT 1;***
+***SELECT reserva_id  
+         ,DATEDIFF (data_fi, data_inici) Nits  
+FROM reserves  
+WHERE DATEDIFF (data_fi, data_inici) = (SELECT MAX(DATEDIFF (data_fi, data_inici))  
+                                          FROM reserves)LIMIT 1;***  
 
 <br>
 
 
 4. Quantes reserves va rebre l’hotel ‘Catalonia Ramblas’ de Barcelona durant tot  l’any 2015 (una reserva pertany al 2015 si alguna nit d’aquesta reserva era del 2015).  
 
-***SELECT COUNT(r.reserva_id) AS Total_Reserves
-  FROM reserves AS r
-  INNER JOIN habitacions AS hab ON hab.hab_id = r.hab_id
-  INNER JOIN hotels AS h ON h.hotel_id = hab.hotel_id
-  INNER JOIN poblacions AS p ON p.poblacio_id = h.poblacio_id
-WHERE h.nom = 'Catalonia Ramblas' AND YEAR(data_inici)=2015 AND p.nom = 'Barcelona';***
+***SELECT COUNT(r.reserva_id) AS Total_Reserves  
+  FROM reserves AS r  
+  INNER JOIN habitacions AS hab ON hab.hab_id = r.hab_id  
+  INNER JOIN hotels AS h ON h.hotel_id = hab.hotel_id  
+  INNER JOIN poblacions AS p ON p.poblacio_id = h.poblacio_id  
+WHERE h.nom = 'Catalonia Ramblas' AND YEAR(data_inici)=2015 AND p.nom = 'Barcelona';***  
 
 <br>
 
 
 5. Obtenir el nom i cognoms dels clients que varen néixer el mes de Març.  
 
-***SELECT nom
-      ,cognom1
+***SELECT nom  
+         ,cognom1  
   FROM clients  
-WHERE MONTH(data_naix) = 03;***
+WHERE MONTH(data_naix) = 03;***  
 
 <br>
 
