@@ -33,10 +33,10 @@ WHERE DATEDIFF (data_fi, data_inici) = (SELECT MAX(DATEDIFF (data_fi, data_inici
 4. Quantes reserves va rebre l’hotel ‘Catalonia Ramblas’ de Barcelona durant tot  l’any 2015 (una reserva pertany al 2015 si alguna nit d’aquesta reserva era del 2015).  
 
 ***SELECT COUNT(r.reserva_id) AS Total_Reserves  
-  FROM reserves AS r  
-  INNER JOIN habitacions AS hab ON hab.hab_id = r.hab_id  
-  INNER JOIN hotels AS h ON h.hotel_id = hab.hotel_id  
-  INNER JOIN poblacions AS p ON p.poblacio_id = h.poblacio_id  
+&nbsp;&nbsp;&nbsp;  FROM reserves AS r  
+&nbsp;&nbsp;&nbsp;  INNER JOIN habitacions AS hab ON hab.hab_id = r.hab_id  
+&nbsp;&nbsp;&nbsp;  INNER JOIN hotels AS h ON h.hotel_id = hab.hotel_id  
+&nbsp;&nbsp;&nbsp;  INNER JOIN poblacions AS p ON p.poblacio_id = h.poblacio_id  
 WHERE h.nom = 'Catalonia Ramblas' AND YEAR(data_inici)=2015 AND p.nom = 'Barcelona';***  
 
 <br>
@@ -45,8 +45,8 @@ WHERE h.nom = 'Catalonia Ramblas' AND YEAR(data_inici)=2015 AND p.nom = 'Barcelo
 5. Obtenir el nom i cognoms dels clients que varen néixer el mes de Març.  
 
 ***SELECT nom  
-         ,cognom1  
-  FROM clients  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ,cognom1  
+&nbsp;&nbsp;&nbsp;  FROM clients  
 WHERE MONTH(data_naix) = 03;***  
 
 <br>
