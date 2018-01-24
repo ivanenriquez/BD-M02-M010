@@ -90,7 +90,11 @@ GROUP BY h.hotel_id;***
 
 9. Obtenir la quantitat de reserves que s’inicien en cadascun dels dies de la setmana. Tenint en compte només l’any 2016.  
 
-
+***SELECT COUNT(reserva_id) AS Total_Reserves  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     ,DAYOFWEEK(data_inici) AS DIA  
+&nbsp;&nbsp;&nbsp;  FROM reserves  
+WHERE YEAR(data_inici)= 2016  
+GROUP BY DAYOFWEEK(data_inici);***  
 
 <br>
 
