@@ -332,7 +332,7 @@ Exemple:
 <br>
 
 
-* Accedir a proxysql amb l'usuari ***sbuser**  
+* Accedir a proxysql amb l'usuari ***sbuser***  
 
 ![SBUSER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/access%20sbuser.JPG)  
 
