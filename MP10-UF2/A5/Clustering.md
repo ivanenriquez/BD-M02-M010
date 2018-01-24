@@ -328,3 +328,18 @@ Exemple:
 *  Tornem a comprovar l'estat dels nodes i veiem que el node torna a estar actiu  
 
 ![FAILOVER3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/failover3.JPG)  
+
+<br>
+
+
+* Accedir a proxysql amb l'usuari ***sbuser**  
+
+![SBUSER](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/access%20sbuser.JPG)  
+
+<br>
+
+
+* Comprovar que fa el balanceig de les peticions comprovant el ***server_id**  
+
+![BALANCEIG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/server_id.JPG)  
+
