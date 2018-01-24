@@ -339,7 +339,7 @@ Exemple:
 <br>
 
 
-* Comprovar que fa el balanceig de les peticions comprovant el ***server_id**  
+* Comprovar que fa el balanceig de les peticions comprovant el ***server_id***  
 
 ![BALANCEIG](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP10-UF2/A5/imatges/server_id.JPG)  
 
