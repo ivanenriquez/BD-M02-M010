@@ -21,13 +21,13 @@ WHERE cognom1 like 'a%' OR cognom1 like 'e%' OR cognom1 like 'i%' OR cognom1 lik
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA2_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta2_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA2_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta2_index.JPG)  
 
@@ -46,13 +46,13 @@ LIMIT 1;***
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA3_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta3_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA3_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta3_index.JPG)  
 
@@ -71,13 +71,13 @@ WHERE h.nom = 'Catalonia Ramblas' AND YEAR(data_inici)=2015 AND p.nom = 'Barcelo
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA4_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta4_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA4_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta4_index.JPG)  
 
@@ -93,7 +93,7 @@ WHERE h.nom = 'Catalonia Ramblas' AND YEAR(data_inici)=2015 AND p.nom = 'Barcelo
 WHERE MONTH(data_naix) = 03;***  
 
 <br>
-*No es pot millorar amb índex.*
+*No es pot millorar amb índex*
 <br>
 <br>
 
@@ -107,13 +107,13 @@ WHERE h.categoria = 4 and p.nom = 'Barcelona';***
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA6_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta6_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA6_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta6_index.JPG)  
 
@@ -131,13 +131,13 @@ GROUP BY MONTH(data_inici);***
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA7_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta7_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA7_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta7_index.JPG)  
 
@@ -158,13 +158,13 @@ GROUP BY h.hotel_id;***
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA8_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta8_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA8_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta8_index.JPG)  
 
@@ -182,13 +182,13 @@ GROUP BY DAYOFWEEK(data_inici);***
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA9_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta9_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA9_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta9_index.JPG)  
 
@@ -223,13 +223,13 @@ WHERE h.nom = 'HTOP Royal Star' AND YEAR(r.data_inici)=2016;***
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA11_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta11_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA11_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta11_index.JPG)  
 
@@ -365,13 +365,13 @@ WHERE p.nom = 'HOLANDA' AND YEAR(r.data_inici)=2016;***
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA17_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta17_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA17_AMB_INDEX](hhttps://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta17_index.JPG)  
 
@@ -388,13 +388,13 @@ WHERE cognom1 = 'Bahi';***
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA18_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta18_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA18_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta18_index.JPG)  
 
@@ -410,13 +410,13 @@ WHERE cognom1 like '%ap%' OR cognom1 like '%ep%' OR cognom1 like '%ip%' OR cogno
 
 <br>
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA19_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta19_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA19_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta19_index.JPG)  
 
@@ -448,13 +448,13 @@ HAVING COUNT(r.reserva_id) = (SELECT MAX(TotalReserves) MaxTotalReserves
 <br>
 
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA20_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta20_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA20_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta20_index.JPG)  
 
@@ -482,13 +482,13 @@ HAVING COUNT(r.reserva_id) = ( SELECT MAX(TotalReserves) MaxTotalReserves
 <br>
 
 
-**EXPLAIN SENSE INDEX**  
+**EXPLAIN SENSE ÍNDEX**  
 
 ![CONSULTA21_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta21_sense_index.JPG)  
 
 <br>
 
-**EXPLAIN AMB INDEX**  
+**EXPLAIN AMB ÍNDEX**  
 
 ![CONSULTA21_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta21_index.JPG)  
 
