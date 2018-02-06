@@ -518,65 +518,71 @@ No es pot millorar amb índex.
 
 **CONSULTA 14**. - Codi client, Nom, Cognom, del client que ha realitzat més reserves de tota la BD.  
 
-![TEMPS_EXECUCIÓ_CONSULTA14]()  
+![TEMPS_EXECUCIÓ_CONSULTA14](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA14_SENSE_CACHE.JPG)  
 
 <br>
 
 **CONSULTA 15**. - Codi client, Nom, Cognom, del client que ha realitzat més reserves durant el mes d’agost de l’any 2016. Les reserves a comptabilitzar són totes aquelles que en algun dia del seu període cau en el mes d’agost.  
 
-![TEMPS_EXECUCIÓ_CONSULTA15]()  
+![TEMPS_EXECUCIÓ_CONSULTA15](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA15_SENSE_CACHE.JPG)  
 
 <br>
 
 **CONSULTA 16**. - Quin és el país que en tenim menys clients?   
 
-![TEMPS_EXECUCIÓ_CONSULTA16]()  
+![TEMPS_EXECUCIÓ_CONSULTA16](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA16_SENSE_CACHE.JPG)  
 
 <br>
 
 **CONSULTA 20**. - Quin és l’hotel de 4 estrelles amb més reserves durant tot el 2015 ( una reserva pertany el 2015 si alguna de les nits hi pertany).  
 
-![TEMPS_EXECUCIÓ_CONSULTA20]()  
+![TEMPS_EXECUCIÓ_CONSULTA20](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA20_SENSE_CACHE.JPG)  
 
 <br>
 
 **CONSULTA 21**. - Quin és l’hotel amb més reserves (tota la BD).  
 
-![TEMPS_EXECUCIÓ_CONSULTA21]()  
+![TEMPS_EXECUCIÓ_CONSULTA21](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA21_SENSE_CACHE.JPG)  
 
+<br>
 <br>
 
 * Activar la query **QUERY CACHE** en mode **ON**  
+
+![QUERY_CACHE_ON](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONFIGURACIÓ_CACHE_ON.JPG)  
+![COMPROVACIÓ_CACHE_ON](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONFIGURACIÓ_CACHE_ON2.JPG)  
+
+<br>
 
 * Temps d'execució de cada consulta  
 
 **CONSULTA 14**. - Codi client, Nom, Cognom, del client que ha realitzat més reserves de tota la BD.  
 
-![TEMPS_EXECUCIÓ_CONSULTA14]()  
+![TEMPS_EXECUCIÓ_CONSULTA14](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA14_CACHE.JPG)  
 
 <br>
 
 **CONSULTA 15**. - Codi client, Nom, Cognom, del client que ha realitzat més reserves durant el mes d’agost de l’any 2016. Les reserves a comptabilitzar són totes aquelles que en algun dia del seu període cau en el mes d’agost.  
 
-![TEMPS_EXECUCIÓ_CONSULTA15]()  
+![TEMPS_EXECUCIÓ_CONSULTA15](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA15_CACHE.JPG)  
 
 <br>
 
 **CONSULTA 16**. - Quin és el país que en tenim menys clients?   
 
-![TEMPS_EXECUCIÓ_CONSULTA16]()  
+![TEMPS_EXECUCIÓ_CONSULTA16](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA16_CACHE.PNG)  
 
 <br>
 
 **CONSULTA 20**. - Quin és l’hotel de 4 estrelles amb més reserves durant tot el 2015 ( una reserva pertany el 2015 si alguna de les nits hi pertany).  
 
-![TEMPS_EXECUCIÓ_CONSULTA20]()  
+![TEMPS_EXECUCIÓ_CONSULTA20]https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA20_CACHE.JPG()  
 
 <br>
 
 **CONSULTA 21**. - 21.	Quin és l’hotel amb més reserves (tota la BD).  
 
-![TEMPS_EXECUCIÓ_CONSULTA21]()  
+![TEMPS_EXECUCIÓ_CONSULTA21](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA21_CACHE.JPG)  
 
 <br>
 <br>
@@ -608,6 +614,10 @@ HAVING COUNT(r.reserva_id) = (SELECT MAX(TotalReserves) MaxTotalReserves
 <br>
 
 * Activar la query **QUERY CACHE** en mode **ON_DEMAND**  
+
+![QUERY_CACHE_ON_DEMAND](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/configuració_cache_on_demand.JPG)  
+![COMPROVACIÓ_CACHE_ON](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONFIGURACIÓ_CACHE_ON2.JPG)  
+
 
 **CONSULTA 14**  
 
