@@ -514,6 +514,37 @@ No es pot millorar amb índex.
 
 ## QUERY CACHÉ   
 
+* Temps d'execució de cada consulta  
+
+**CONSULTA 14**. - Codi client, Nom, Cognom, del client que ha realitzat més reserves de tota la BD.  
+
+![TEMPS_EXECUCIÓ_CONSULTA14]()  
+
+<br>
+
+**CONSULTA 15**. - Codi client, Nom, Cognom, del client que ha realitzat més reserves durant el mes d’agost de l’any 2016. Les reserves a comptabilitzar són totes aquelles que en algun dia del seu període cau en el mes d’agost.  
+
+![TEMPS_EXECUCIÓ_CONSULTA15]()  
+
+<br>
+
+**CONSULTA 16**. - Quin és el país que en tenim menys clients?   
+
+![TEMPS_EXECUCIÓ_CONSULTA16]()  
+
+<br>
+
+**CONSULTA 20**. - Quin és l’hotel de 4 estrelles amb més reserves durant tot el 2015 ( una reserva pertany el 2015 si alguna de les nits hi pertany).  
+
+![TEMPS_EXECUCIÓ_CONSULTA20]()  
+
+<br>
+
+**CONSULTA 21**. - 21.	Quin és l’hotel amb més reserves (tota la BD).  
+
+![TEMPS_EXECUCIÓ_CONSULTA21]()  
+
+<br>
 
 
 <br>
