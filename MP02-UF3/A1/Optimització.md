@@ -8,7 +8,7 @@
 WHERE categoria = 4;***
 
 <br>
-*No es pot millorar amb índex.*
+*No es pot millorar amb índex*
 <br>
 <br>
 
