@@ -514,7 +514,7 @@ No es pot millorar amb índex.
 
 ## QUERY CACHÉ   
 
-* Temps d'execució de cada consulta  
+* Temps d'execució de cada consulta sense la **QUERY CACHE** activada  
 
 **CONSULTA 14**. - Codi client, Nom, Cognom, del client que ha realitzat més reserves de tota la BD.  
 
@@ -546,6 +546,9 @@ No es pot millorar amb índex.
 
 <br>
 
+* Activar la query **QUERY CACHE**  
+
+* Temps d'execució de cada consulta  
 
 <br>
 <br>
