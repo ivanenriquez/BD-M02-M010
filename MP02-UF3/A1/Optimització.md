@@ -584,6 +584,7 @@ No es pot millorar amb índex.
 * Modificació perquè la consulta no passi per caché  
 
 **CONSULTA 20**  
+
 ***SELECT SQL_NO_CACHE h.hotel_id  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ,h.nom  
 &nbsp;&nbsp;&nbsp;  FROM hotels h  
@@ -609,6 +610,7 @@ HAVING COUNT(r.reserva_id) = (SELECT MAX(TotalReserves) MaxTotalReserves
 * Activar la query **QUERY CACHE** en mode **ON_DEMAND**  
 
 **CONSULTA 14**  
+
 ***SELECT SQL_CACHE c.client_id  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ,c.nom  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ,c.cognom1  
