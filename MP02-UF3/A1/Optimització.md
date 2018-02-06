@@ -540,7 +540,7 @@ No es pot millorar amb índex.
 
 <br>
 
-**CONSULTA 21**. - 21.	Quin és l’hotel amb més reserves (tota la BD).  
+**CONSULTA 21**. - Quin és l’hotel amb més reserves (tota la BD).  
 
 ![TEMPS_EXECUCIÓ_CONSULTA21]()  
 
