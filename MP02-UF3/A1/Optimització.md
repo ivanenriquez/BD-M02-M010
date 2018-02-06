@@ -620,7 +620,7 @@ HAVING COUNT(r.reserva_id) = (SELECT MAX(TotalReserves) MaxTotalReserves
 <br>
 
 * Execució consulta amb la **QUERY CACHE** en mode **ON_DEMAND**  
-![EXECUCIO_ON_DEMAND](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/Captura.JPG)  
+![EXECUCIO_ON_DEMAND](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/execució_on_demand.JPG)  
 
 **CONSULTA 14**  
 
@@ -646,5 +646,15 @@ HAVING COUNT(r.reserva_id) = ( SELECT MAX(TotalReserves) MaxTotalReserves
 <br>
 <br>
 
+* Comprovar el **CacheHitRatio**  
 
+Cache_hits: ***SHOW GLOBAL STATUS LIKE ‘qcache_hits’;***  
+Cache_misses: ***SHOW GLOBAL STATUS LIKE ‘com_select’;***
+
+![CACHEHITRATIO](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/cacheratio.JPG)  
+
+<br>
+<br>
+<br>
+<br>
 ## BENCHMARKING
