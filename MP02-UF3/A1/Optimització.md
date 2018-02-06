@@ -576,11 +576,11 @@ No es pot millorar amb índex.
 
 **CONSULTA 20**. - Quin és l’hotel de 4 estrelles amb més reserves durant tot el 2015 ( una reserva pertany el 2015 si alguna de les nits hi pertany).  
 
-![TEMPS_EXECUCIÓ_CONSULTA20]https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA20_CACHE.JPG()  
+![TEMPS_EXECUCIÓ_CONSULTA20](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA20_CACHE.JPG()  
 
 <br>
 
-**CONSULTA 21**. - 21.	Quin és l’hotel amb més reserves (tota la BD).  
+**CONSULTA 21**. - Quin és l’hotel amb més reserves (tota la BD).  
 
 ![TEMPS_EXECUCIÓ_CONSULTA21](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/CONSULTA21_CACHE.JPG)  
 
@@ -657,4 +657,5 @@ Cache_misses: ***SHOW GLOBAL STATUS LIKE ‘com_select’;***
 <br>
 <br>
 <br>
+
 ## BENCHMARKING
