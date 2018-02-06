@@ -8,14 +8,10 @@
 WHERE categoria = 4;***
 
 <br>
+*No es pot millorar amb índex.*
+<br>
+<br>
 
-**EXPLAIN SENSE INDEX**  
-
-![CONSULTA2_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta2_sense_index.JPG)  
-
-**EXPLAIN AMB INDEX**  
-
-![CONSULTA2_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta2_index.JPG)  
 
 2. Obtenir el nom dels clients (Nom i cognom) que el seu cognom comenci per vocal (sense tenir en compte els accents).  
 
@@ -23,6 +19,19 @@ WHERE categoria = 4;***
 &nbsp;&nbsp;&nbsp;  FROM clients  
 WHERE cognom1 like 'a%' OR cognom1 like 'e%' OR cognom1 like 'i%' OR cognom1 like 'o%' OR cognom1 like 'u%';***  
 
+<br>
+
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA2_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta2_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA2_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta2_index.JPG)  
+
+<br>
 <br>
 
 
@@ -37,6 +46,19 @@ LIMIT 1;***
 
 <br>
 
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA3_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta3_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA3_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta3_index.JPG)  
+
+<br>
+<br>
+
 
 4. Quantes reserves va rebre l’hotel ‘Catalonia Ramblas’ de Barcelona durant tot  l’any 2015 (una reserva pertany al 2015 si alguna nit d’aquesta reserva era del 2015).  
 
@@ -49,6 +71,19 @@ WHERE h.nom = 'Catalonia Ramblas' AND YEAR(data_inici)=2015 AND p.nom = 'Barcelo
 
 <br>
 
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA4_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta4_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA4_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta4_index.JPG)  
+
+<br>
+<br>
+
 
 5. Obtenir el nom i cognoms dels clients que varen néixer el mes de Març.  
 
@@ -57,6 +92,9 @@ WHERE h.nom = 'Catalonia Ramblas' AND YEAR(data_inici)=2015 AND p.nom = 'Barcelo
 &nbsp;&nbsp;&nbsp;  FROM clients  
 WHERE MONTH(data_naix) = 03;***  
 
+<br>
+*No es pot millorar amb índex.*
+<br>
 <br>
 
 
@@ -69,6 +107,19 @@ WHERE h.categoria = 4 and p.nom = 'Barcelona';***
 
 <br>
 
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA6_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta6_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA6_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta6_index.JPG)  
+
+<br>
+<br>
+
 
 7. De l’any 2015 volem obtenir els seu histograma de reserves. És a dir volem saber el número de reserves de cadascun dels mesos. Una reserva pertany a un mes si la alguna nit d’aquella reserva cau a dins de l’any 2015.  
 
@@ -78,6 +129,19 @@ WHERE h.categoria = 4 and p.nom = 'Barcelona';***
 WHERE YEAR(data_inici)= 2015  
 GROUP BY MONTH(data_inici);***  
 
+<br>
+
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA7_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta7_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA7_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta7_index.JPG)  
+
+<br>
 <br>
 
 
@@ -94,6 +158,19 @@ GROUP BY h.hotel_id;***
 
 <br>
 
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA8_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta8_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA8_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta8_index.JPG)  
+
+<br>
+<br>
+
 
 9. Obtenir la quantitat de reserves que s’inicien en cadascun dels dies de la setmana. Tenint en compte només l’any 2016.  
 
@@ -103,6 +180,19 @@ GROUP BY h.hotel_id;***
 WHERE YEAR(data_inici)= 2016  
 GROUP BY DAYOFWEEK(data_inici);***  
 
+<br>
+
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA9_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta9_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA9_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta9_index.JPG)  
+
+<br>
 <br>
 
 
@@ -116,6 +206,9 @@ WHERE YEAR(r.data_inici) = 2014
 GROUP BY c.sexe;***  
 
 <br>
+*No es pot millorar amb índex.*
+<br>
+<br>
 
 
 11.	Quina és la mitjana de dies de reserva per l’hotel «HTOP Royal Star» de Blanes durant l’any 2016? (Una reserva pertany el 2016 si alguna nit cau en aquest any).  
@@ -128,6 +221,19 @@ GROUP BY c.sexe;***
 &nbsp;&nbsp;&nbsp;  INNER JOIN hotels h ON h.hotel_id = hab.hotel_id  
 WHERE h.nom = 'HTOP Royal Star' AND YEAR(r.data_inici)=2016;***  
 
+<br>
+
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA11_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta11_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA11_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta11_index.JPG)  
+
+<br>
 <br>
 
 
@@ -152,6 +258,9 @@ HAVING COUNT(hab.hab_id) = ( SELECT MAX(TotalHabitacions) MaxTotalHabitacions
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; );***  
 
 <br>
+*No es pot millorar amb índex.*
+<br>
+<br>
 
 
 13.	Rànquing de 5 països amb més reserves durant l’any 2016. Per cada país mostrar el nom del país i el número de reserves.  
@@ -166,6 +275,9 @@ WHERE YEAR(r.data_inici) = 2016
 GROUP BY p.pais_id  
 ORDER BY COUNT(r.reserva_id) DESC LIMIT 5;***  
 
+<br>
+*No es pot millorar amb índex.*
+<br>
 <br>
 
 
@@ -192,6 +304,9 @@ HAVING COUNT(r.reserva_id) = ( SELECT MAX(TotalReserves) MaxTotalReserves
 
 
 <br>
+*No es pot millorar amb índex.*
+<br>
+<br>
 
 
 15. Codi client, Nom, Cognom, del client que ha realitzat més reserves durant el mes d’agost de l’any 2016. Les reserves a comptabilitzar són totes aquelles que en algun dia del seu període cau en el mes d’agost.  
@@ -213,6 +328,9 @@ HAVING COUNT(r.reserva_id) = (SELECT MAX(TotalReserves) MaxTotalReserves
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    );***  
 
 <br>
+*No es pot millorar amb índex.*
+<br>
+<br>
 
 
 16. Quin és el país que en tenim menys clients?  
@@ -232,6 +350,9 @@ HAVING COUNT(c.client_id) = ( SELECT MIN(Totalclients) MaxTotalclients
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  );***  
 
 <br>
+*No es pot millorar amb índex.*
+<br>
+<br>
 
 
 17. Quina és la mitjana de nits dels clients provinents d’‘HOLANDA’ per l’any 2016?  
@@ -244,6 +365,19 @@ WHERE p.nom = 'HOLANDA' AND YEAR(r.data_inici)=2016;***
 
 <br>
 
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA17_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta17_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA17_AMB_INDEX](hhttps://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta17_index.JPG)  
+
+<br>
+<br>
+
 
 18.	Digues el nom i cognoms dels clients que el seu cognom sigui ‘Bahi’.  
 
@@ -254,6 +388,19 @@ WHERE cognom1 = 'Bahi';***
 
 <br>
 
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA18_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta18_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA18_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta18_index.JPG)  
+
+<br>
+<br>
+
 
 19.	Quins clients (nom, cognoms) segueixen el patró de que el seu cognom comenci per la lletra ‘p’  i seguida d’una vocal.  
 
@@ -261,6 +408,19 @@ WHERE cognom1 = 'Bahi';***
 &nbsp;&nbsp;&nbsp;  FROM clients  
 WHERE cognom1 like '%ap%' OR cognom1 like '%ep%' OR cognom1 like '%ip%' OR cognom1 like '%op%' OR cognom1 like '%up%';***  
 
+<br>
+
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA19_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta19_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA19_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta19_index.JPG)  
+
+<br>
 <br>
 
 
@@ -288,6 +448,20 @@ HAVING COUNT(r.reserva_id) = (SELECT MAX(TotalReserves) MaxTotalReserves
 <br>
 
 
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA20_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta20_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA20_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta20_index.JPG)  
+
+<br>
+<br>
+
+
 21.	Quin és l’hotel amb més reserves (tota la BD).  
 
 ***SELECT h.hotel_id  
@@ -305,6 +479,20 @@ HAVING COUNT(r.reserva_id) = ( SELECT MAX(TotalReserves) MaxTotalReserves
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                        ) H  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          );***  
 
+<br>
+
+
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA21_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta21_sense_index.JPG)  
+
+<br>
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA21_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta21_index.JPG)  
+
+<br>
 <br>
 
 
@@ -326,6 +514,7 @@ HAVING COUNT(r.reserva_id) = ( SELECT MAX(TotalReserves) MaxTotalReserves
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                               );***  
 
 <br>
+
 <br>
 <br>
 <br>
