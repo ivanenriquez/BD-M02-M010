@@ -9,6 +9,13 @@ WHERE categoria = 4;***
 
 <br>
 
+**EXPLAIN SENSE INDEX**  
+
+![CONSULTA2_SENSE_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta2_sense_index.JPG)  
+
+**EXPLAIN AMB INDEX**  
+
+![CONSULTA2_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta2_index.JPG)  
 
 2. Obtenir el nom dels clients (Nom i cognom) que el seu cognom comenci per vocal (sense tenir en compte els accents).  
 
