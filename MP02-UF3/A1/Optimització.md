@@ -366,7 +366,7 @@ WHERE p.nom = 'HOLANDA' AND YEAR(r.data_inici)=2016;***
 
 **EXPLAIN AMB ÍNDEX**  
 
-![CONSULTA17_AMB_INDEX](hhttps://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta17_index.JPG)  
+![CONSULTA17_AMB_INDEX](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/consulta17_index.JPG)  
 
 <br>
 <br>
