@@ -664,4 +664,37 @@ Cache_misses: ***SHOW GLOBAL STATUS LIKE ‘com_select’;***
 <br>
 <br>
 
-## BENCHMARKING
+## BENCHMARKING  
+![SCRIPT_BENCHMARK.LUA](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/script_benchmark.lua)  
+<br>
+<br>
+
+* Test 1. Sense índexs i amb la **CACHE** desactivada  
+![TEST1](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/Captura1.JPG)  
+
+<br>
+<br>
+
+* Test 2. Amb índexs  
+![TEST2](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/Captura2.JPG)  
+
+<br>
+<br>
+
+* Test 3. Amb la **CACHE** activada  
+![TEST3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/Captura3.JPG)  
+
+<br>
+<br>
+
+
+* Comparativa dels tres benchmarks:  
+
+La diferencia entre els tres es gairebé nul·la.
+
+<br>
+<br>
+
+* **CacheHitRatio** del test3  
+![CACHEHITRATIO_TEST3](https://github.com/ivanenriquez/BD-M02-M010/blob/master/MP02-UF3/A1/imatges/Captura4.JPG)  
+
